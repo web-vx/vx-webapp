@@ -28,18 +28,50 @@ export default function Contact() {
               <h3 className="text-sm font-semibold text-white/60 uppercase tracking-wider mb-3">
                 Email
               </h3>
-              <a
-                href="mailto:w.azab@vertexshell.com"
-                className="block w-fit text-accent underline underline-offset-4 decoration-accent/40 hover:text-white hover:decoration-white transition-colors"
-              >
-                w.azab@vertexshell.com
-              </a>
-              <a
-                href="mailto:youssef.azab@vertexshell.com"
-                className="block w-fit text-accent underline underline-offset-4 decoration-accent/40 hover:text-white hover:decoration-white transition-colors mt-1"
-              >
-                youssef.azab@vertexshell.com
-              </a>
+              <div className="space-y-4">
+                <div>
+                  <a
+                    href="mailto:w.azab@vertexshell.com"
+                    className="inline-flex items-center gap-1.5 text-accent underline underline-offset-4 decoration-accent/40 hover:text-white hover:decoration-white transition-colors"
+                  >
+                    Waleed
+                    <svg
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.6"
+                      className="w-3.5 h-3.5"
+                    >
+                      <rect x="2.5" y="4.5" width="15" height="11" rx="1.5" />
+                      <path d="M3 5.5l7 5.5 7-5.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </a>
+                  <p className="text-xs text-white/50 mt-0.5">
+                    Managing Director
+                  </p>
+                </div>
+                <div>
+                  <a
+                    href="mailto:youssef.azab@vertexshell.com"
+                    className="inline-flex items-center gap-1.5 text-accent underline underline-offset-4 decoration-accent/40 hover:text-white hover:decoration-white transition-colors"
+                  >
+                    Youssef
+                    <svg
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.6"
+                      className="w-3.5 h-3.5"
+                    >
+                      <rect x="2.5" y="4.5" width="15" height="11" rx="1.5" />
+                      <path d="M3 5.5l7 5.5 7-5.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </a>
+                  <p className="text-xs text-white/50 mt-0.5">
+                    Business Relations Manager
+                  </p>
+                </div>
+              </div>
             </div>
 
             <div>
@@ -48,9 +80,22 @@ export default function Contact() {
               </h3>
               <a
                 href="tel:+201222118511"
-                className="block w-fit text-accent underline underline-offset-4 decoration-accent/40 hover:text-white hover:decoration-white transition-colors"
+                className="inline-flex items-center gap-1.5 text-accent underline underline-offset-4 decoration-accent/40 hover:text-white hover:decoration-white transition-colors"
               >
-                01222118511
+                Call us
+                <svg
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.6"
+                  className="w-3.5 h-3.5"
+                >
+                  <path
+                    d="M4 3.5h3l1.5 4-2 1.5a11 11 0 004.5 4.5l1.5-2 4 1.5v3a1.5 1.5 0 01-1.5 1.5C8 17.5 2.5 12 2.5 5A1.5 1.5 0 014 3.5z"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
               </a>
             </div>
 
