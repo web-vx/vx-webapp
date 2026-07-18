@@ -79,11 +79,6 @@ export default function Hero() {
       <div className="relative mx-auto max-w-[1200px] px-6 py-32 md:py-0 w-full">
         <div className="flex items-center gap-16">
           <div className="max-w-2xl">
-            <LogoMark
-              color="white"
-              className="w-16 h-16 md:w-20 md:h-20 mb-8"
-            />
-
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] tracking-tight">
               Diversified Industrial Supply for Demanding Operations
             </h1>
