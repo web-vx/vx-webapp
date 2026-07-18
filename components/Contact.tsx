@@ -30,13 +30,13 @@ export default function Contact() {
               </h3>
               <a
                 href="mailto:w.azab@vertexshell.com"
-                className="block text-white hover:text-accent transition-colors"
+                className="block w-fit text-accent underline underline-offset-4 decoration-accent/40 hover:text-white hover:decoration-white transition-colors"
               >
                 w.azab@vertexshell.com
               </a>
               <a
                 href="mailto:youssef.azab@vertexshell.com"
-                className="block text-white hover:text-accent transition-colors mt-1"
+                className="block w-fit text-accent underline underline-offset-4 decoration-accent/40 hover:text-white hover:decoration-white transition-colors mt-1"
               >
                 youssef.azab@vertexshell.com
               </a>
@@ -46,7 +46,12 @@ export default function Contact() {
               <h3 className="text-sm font-semibold text-white/60 uppercase tracking-wider mb-3">
                 Phone
               </h3>
-              <p className="text-white/70 italic text-sm">[Phone number placeholder]</p>
+              <a
+                href="tel:+201222118511"
+                className="block w-fit text-accent underline underline-offset-4 decoration-accent/40 hover:text-white hover:decoration-white transition-colors"
+              >
+                01222118511
+              </a>
             </div>
 
             <div>
@@ -57,9 +62,19 @@ export default function Contact() {
                 href="https://www.linkedin.com/company/vertexshell"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-accent transition-colors"
+                className="inline-flex items-center gap-1.5 text-accent underline underline-offset-4 decoration-accent/40 hover:text-white hover:decoration-white transition-colors"
               >
-                linkedin.com/company/vertexshell
+                VertexShell Solutions
+                <svg
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  className="w-3.5 h-3.5"
+                >
+                  <path d="M8 5h7v7" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M15 5L5 15" strokeLinecap="round" />
+                </svg>
               </a>
             </div>
 
