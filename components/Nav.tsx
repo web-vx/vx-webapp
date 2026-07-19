@@ -6,7 +6,7 @@ import LogoMark from "@/components/LogoMark";
 
 const links = [
   { label: "About", href: "#about" },
-  { label: "Capabilities", href: "#capabilities" },
+  { label: "What We Offer", href: "#capabilities" },
   { label: "Why VertexShell", href: "#why" },
   { label: "Contact", href: "#contact" },
 ];
@@ -41,10 +41,10 @@ export default function Nav() {
       <div className="mx-auto max-w-[1200px] px-6 flex items-center justify-between h-16 md:h-20">
         <a href="#" className="flex items-center gap-3 shrink-0 relative">
           <Image
-            src="/logo-with-text.png"
+            src="/logo-lockup.png"
             alt="VertexShell Solutions"
-            width={180}
-            height={48}
+            width={438}
+            height={122}
             className={`h-9 md:h-11 w-auto transition-opacity duration-300 ${
               scrolled ? "opacity-100" : "opacity-0"
             }`}
@@ -78,7 +78,7 @@ export default function Nav() {
 
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden relative w-8 h-8 flex flex-col items-center justify-center gap-1.5"
+          className="md:hidden relative w-11 h-11 -mr-1.5 flex flex-col items-center justify-center gap-1.5"
           aria-label="Toggle menu"
         >
           <span

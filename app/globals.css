@@ -70,4 +70,9 @@ body {
   .animate-spin-slow {
     animation: none;
   }
+
+  .animate-fade-in-up {
+    animation: none;
+    opacity: 1;
+  }
 }

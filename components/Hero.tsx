@@ -111,7 +111,7 @@ export default function Hero() {
           </div>
 
           <div
-            className="hidden lg:block relative flex-1 max-w-[440px] aspect-square shrink-0"
+            className="hidden lg:block relative shrink-0 lg:w-[360px] xl:w-[440px] aspect-square"
             aria-hidden="true"
           >
             <div className="absolute inset-10 rounded-full bg-accent/15 blur-3xl" />
