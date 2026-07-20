@@ -30,13 +30,13 @@ export default function About() {
             construction sectors across Egypt, the MENA region, and
             international markets. We source, engineer, and deliver
             factory-built infrastructure, specialized assets, and industrial
-            products — adapted for commercial and field deployment in demanding
+            products, adapted for commercial and field deployment in demanding
             environments.
           </p>
           <p className="text-secondary leading-relaxed">
             Through partnerships with leading European and international
-            manufacturers — including producers with decades of
-            harsh-environment and defense-grade experience — our offering
+            manufacturers, including producers with decades of
+            harsh-environment and defense-grade experience, our offering
             combines engineering depth, build quality, and a broad sourcing
             network, delivered through a locally-based commercial and project
             team.

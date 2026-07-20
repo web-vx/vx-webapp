@@ -17,12 +17,12 @@ const items = [
   {
     title: "End-to-end delivery.",
     description:
-      "From engineering and sourcing through installation, commissioning, and handover — managed by a single accountable team.",
+      "From engineering and sourcing through installation, commissioning, and handover, managed by a single accountable team.",
   },
   {
     title: "Single point of supply.",
     description:
-      "One channel across infrastructure, power, aviation, and industrial supply — backed by an international manufacturing and sourcing network.",
+      "One channel across infrastructure, power, aviation, and industrial supply, backed by an international manufacturing and sourcing network.",
   },
 ];
 

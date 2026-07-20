@@ -90,7 +90,7 @@ export default function Hero() {
 
             <p className="mt-6 text-lg md:text-xl text-white/70 leading-relaxed max-w-xl">
               Engineered infrastructure, power systems, aviation and specialized
-              assets, and broader industrial supply — delivered across Egypt,
+              assets, and broader industrial supply, delivered across Egypt,
               the MENA region, and international markets.
             </p>
 

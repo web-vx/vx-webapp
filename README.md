@@ -1,6 +1,6 @@
 # VertexShell Solutions Website
 
-One-page marketing website for VertexShell Solutions — a Cairo-based supplier of modular infrastructure, prefabricated electrical systems, and industrial products.
+One-page marketing website for VertexShell Solutions, a Cairo-based supplier of modular infrastructure, prefabricated electrical systems, and industrial products.
 
 ## Tech Stack
 

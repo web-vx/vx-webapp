@@ -131,7 +131,7 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* FORM — Replace the action URL with your Formspree endpoint: https://formspree.io/f/YOUR_FORM_ID */}
+          {/* FORM: Replace the action URL with your Formspree endpoint: https://formspree.io/f/YOUR_FORM_ID */}
           <form
             action="https://formspree.io/f/YOUR_FORM_ID"
             method="POST"
