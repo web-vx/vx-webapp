@@ -15,7 +15,8 @@ const pillars = [
       "Discreet, documentation-led transaction management",
       "End-to-end handling from identification through transfer",
     ],
-    photoLabel: "Fixed-wing or rotary aircraft",
+    photoSrc: "/images/aviation-fleet.png",
+    photoLabel: "C-130 Hercules and CH-47 Chinook in flight",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2" className="w-10 h-10">
         <path
@@ -36,7 +37,8 @@ const pillars = [
       "Engineered for harsh-environment and remote-site deployment",
       "Factory-built, fully integrated, rapid installation",
     ],
-    photoLabel: "Prefab e-house or shelter in the field",
+    photoSrc: "/images/modular-e-house.png",
+    photoLabel: "E-house control shelter, cutaway engineering render",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2" className="w-10 h-10">
         <rect x="6" y="18" width="36" height="24" rx="2" />
@@ -57,7 +59,8 @@ const pillars = [
       "Built for industrial sites and remote operations",
       "Configured for mission-critical continuity",
     ],
-    photoLabel: "Containerized generator or power skid",
+    photoSrc: "/images/power-genset.png",
+    photoLabel: "Containerized power generator skid",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2" className="w-10 h-10">
         <path d="M20 6l4 14h-8l4 14" strokeLinecap="round" strokeLinejoin="round" />
@@ -79,7 +82,8 @@ const pillars = [
       "Single channel for hard-to-source requirements",
       "Complementary industrial categories on request",
     ],
-    photoLabel: "Warehouse or logistics yard",
+    photoSrc: "/images/logistics-yard.png",
+    photoLabel: "Aerial view of a logistics and container yard",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2" className="w-10 h-10">
         <circle cx="24" cy="24" r="18" />

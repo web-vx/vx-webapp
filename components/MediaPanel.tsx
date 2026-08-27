@@ -1,49 +1,47 @@
+import Image from "next/image";
+
 interface MediaPanelProps {
   label: string;
+  src?: string;
   className?: string;
   fill?: boolean;
 }
 
 /**
- * Placeholder for a real photo. Swap by rendering a next/image inside
- * (or in place of) this component once the shot in `label` is available.
+ * Renders the photo at `src` when supplied; otherwise shows a "photo needed"
+ * placeholder captioned with `label` so missing shots stay visible during dev.
  */
-export default function MediaPanel({ label, className = "", fill = false }: MediaPanelProps) {
+export default function MediaPanel({ label, src, className = "", fill = false }: MediaPanelProps) {
+  const wrapperClassName = `relative overflow-hidden bg-navy ${
+    fill ? "absolute inset-0" : ""
+  } ${className}`;
+
+  if (src) {
+    return (
+      <div className={wrapperClassName}>
+        <Image src={src} alt={label} fill className="object-cover" />
+      </div>
+    );
+  }
+
   return (
-    <div
-      className={`relative overflow-hidden bg-navy ${
-        fill ? "absolute inset-0" : "rounded-lg"
-      } ${className}`}
-    >
+    <div className={wrapperClassName}>
       <div
-        className="absolute inset-0 opacity-30"
-        style={{
-          backgroundImage:
-            "linear-gradient(135deg, #1B4F7E 0%, #0F2D4A 55%, #0A1F35 100%)",
-        }}
-      />
-      <div
-        className="absolute inset-0 opacity-[0.07]"
+        className="absolute inset-0 opacity-[0.08]"
         style={{
           backgroundImage:
             "linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px)",
-          backgroundSize: "32px 32px",
+          backgroundSize: "28px 28px",
         }}
       />
-      <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 px-6 text-center">
-        <svg
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          className="w-8 h-8 text-white/25"
-        >
-          <rect x="3" y="5" width="18" height="14" rx="2" />
-          <circle cx="12" cy="12" r="3.5" />
-          <path d="M8 5l1.5-2h5L16 5" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-        <p className="text-[11px] font-semibold tracking-[0.15em] uppercase text-white/35">
-          Photo needed
+      <div className="absolute inset-4 border border-white/15" />
+      <div className="absolute top-4 left-4 w-3 h-3 border-t border-l border-white/40" />
+      <div className="absolute top-4 right-4 w-3 h-3 border-t border-r border-white/40" />
+      <div className="absolute bottom-4 left-4 w-3 h-3 border-b border-l border-white/40" />
+      <div className="absolute bottom-4 right-4 w-3 h-3 border-b border-r border-white/40" />
+      <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 px-6 text-center">
+        <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-white/30">
+          Photo pending
         </p>
         <p className="text-sm text-white/55 max-w-[220px]">{label}</p>
       </div>

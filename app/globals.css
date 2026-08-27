@@ -8,7 +8,9 @@
   --color-light: #F4F6F8;
   --color-accent: #4A8FCB;
   --color-secondary: #5A5A5A;
-  --font-sans: var(--font-inter);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+  --font-mono: var(--font-mono);
 }
 
 html {
@@ -38,39 +40,7 @@ body {
   opacity: 0;
 }
 
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-.animate-float {
-  animation: float 7s ease-in-out infinite;
-}
-
-@keyframes spin-slow {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.animate-spin-slow {
-  animation: spin-slow 60s linear infinite;
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .animate-float,
-  .animate-spin-slow {
-    animation: none;
-  }
-
   .animate-fade-in-up {
     animation: none;
     opacity: 1;

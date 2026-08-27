@@ -1,173 +1,68 @@
 import Link from "next/link";
-import LogoMark from "@/components/LogoMark";
 import MediaPanel from "@/components/MediaPanel";
 
 const pillars = [
-  {
-    label: "Aviation & Assets",
-    position: "top-2 right-0",
-    enterDelay: "0.3s",
-    floatDuration: "6.5s",
-    floatDelay: "0s",
-    icon: (
-      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.5" className="w-6 h-6">
-        <path
-          d="M24 4c2 0 3 2 3 5v9l17 9v4l-17-4v9l5 4v4l-8-3-8 3v-4l5-4v-9L4 31v-4l17-9V9c0-3 1-5 3-5z"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
-    ),
-  },
-  {
-    label: "Modular Infrastructure",
-    position: "top-[35%] -left-6",
-    enterDelay: "0.45s",
-    floatDuration: "7.5s",
-    floatDelay: "-2s",
-    icon: (
-      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.5" className="w-6 h-6">
-        <rect x="6" y="18" width="36" height="24" rx="2" />
-        <path d="M6 18L24 6l18 12" />
-        <rect x="18" y="28" width="12" height="14" />
-      </svg>
-    ),
-  },
-  {
-    label: "Power Systems",
-    position: "bottom-[22%] -right-4",
-    enterDelay: "0.6s",
-    floatDuration: "7s",
-    floatDelay: "-4s",
-    icon: (
-      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.5" className="w-6 h-6">
-        <path d="M26 4L10 28h10l-2 16 16-24H24l2-16z" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-    ),
-  },
-  {
-    label: "Industrial Supply",
-    position: "bottom-2 left-10",
-    enterDelay: "0.75s",
-    floatDuration: "8s",
-    floatDelay: "-1s",
-    icon: (
-      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.5" className="w-6 h-6">
-        <circle cx="24" cy="24" r="18" />
-        <circle cx="24" cy="24" r="6" />
-        <line x1="24" y1="6" x2="24" y2="18" />
-        <line x1="24" y1="30" x2="24" y2="42" />
-        <line x1="6" y1="24" x2="18" y2="24" />
-        <line x1="30" y1="24" x2="42" y2="24" />
-      </svg>
-    ),
-  },
+  "Aviation & Assets",
+  "Modular Infrastructure",
+  "Power Systems",
+  "Industrial Supply",
 ];
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center bg-navy overflow-hidden">
-      <MediaPanel label="Signature shot: aircraft, e-house install, or power skid on-site" fill className="opacity-50" />
-      <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/85 to-navy/40" />
-      <div className="absolute inset-0 opacity-[0.04]">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle at 1px 1px, white 1px, transparent 0)",
-            backgroundSize: "40px 40px",
-          }}
-        />
-      </div>
+    <section className="relative min-h-screen flex flex-col justify-end bg-navy overflow-hidden">
+      <MediaPanel
+        src="/images/hero-background.png"
+        label="C-130 propeller and wing on the tarmac with an aerobatic display team passing behind"
+        fill
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/65 to-navy/10" />
+      <div className="absolute inset-0 bg-gradient-to-b from-navy/60 via-transparent to-transparent" />
 
-      <div className="relative mx-auto max-w-[1200px] px-6 py-32 md:py-0 w-full">
-        <div className="flex items-center gap-16">
-          <div className="max-w-2xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] tracking-tight">
-              Diversified Industrial Supply for Demanding Operations
-            </h1>
+      <div className="absolute bottom-8 left-8 w-8 h-8 border-b-2 border-l-2 border-white/25 hidden md:block" />
+      <div className="absolute bottom-8 right-8 w-8 h-8 border-b-2 border-r-2 border-white/25 hidden md:block" />
 
-            <p className="mt-4 text-sm md:text-base font-semibold text-accent tracking-[0.15em] uppercase">
-              Excellence in Modular Infrastructure, Power, Aviation &amp;
-              Specialized Supply
-            </p>
+      <div className="relative mx-auto max-w-[1200px] px-6 pt-44 pb-14 w-full">
+        <p className="font-mono text-xs tracking-[0.25em] uppercase text-accent mb-6">
+          Cairo, Egypt &middot; MENA &amp; International
+        </p>
 
-            <p className="mt-6 text-lg md:text-xl text-white/70 leading-relaxed max-w-xl">
-              Engineered infrastructure, power systems, aviation and specialized
-              assets, and broader industrial supply, delivered across Egypt,
-              the MENA region, and international markets.
-            </p>
+        <h1 className="font-display font-extrabold uppercase text-white leading-[0.95] tracking-tight text-5xl sm:text-6xl md:text-7xl lg:text-[5.25rem] max-w-4xl">
+          Diversified Industrial Supply for Demanding Operations
+        </h1>
 
-            <div className="mt-10 flex flex-wrap gap-4">
-              <Link
-                href="/contact"
-                className="inline-flex items-center px-7 py-3.5 bg-primary text-white text-sm font-semibold tracking-wide rounded hover:bg-accent transition-colors"
-              >
-                Get in touch
-              </Link>
-              <Link
-                href="/services"
-                className="inline-flex items-center px-7 py-3.5 border border-white/30 text-white text-sm font-semibold tracking-wide rounded hover:bg-white/10 transition-colors"
-              >
-                What we offer
-              </Link>
-            </div>
-          </div>
+        <p className="mt-6 text-lg md:text-xl text-white/70 leading-relaxed max-w-xl">
+          Engineered infrastructure, power systems, aviation and specialized
+          assets, and broader industrial supply, delivered across Egypt, the
+          MENA region, and international markets.
+        </p>
 
-          <div
-            className="hidden lg:block relative shrink-0 lg:w-[360px] xl:w-[440px] aspect-square"
-            aria-hidden="true"
+        <div className="mt-10 flex flex-wrap gap-4">
+          <Link
+            href="/contact"
+            className="inline-flex items-center px-8 py-4 bg-primary text-white text-sm font-bold uppercase tracking-wider hover:bg-accent transition-colors"
           >
-            <div className="absolute inset-10 rounded-full bg-accent/15 blur-3xl" />
+            Get in touch
+          </Link>
+          <Link
+            href="/services"
+            className="inline-flex items-center px-8 py-4 border border-white/40 text-white text-sm font-bold uppercase tracking-wider hover:border-white hover:bg-white/10 transition-colors"
+          >
+            What we offer
+          </Link>
+        </div>
 
-            <svg
-              viewBox="0 0 440 440"
-              className="absolute inset-0 w-full h-full animate-spin-slow"
-              fill="none"
+        <div className="mt-14 pt-6 border-t border-white/15 flex flex-wrap gap-x-8 gap-y-3">
+          {pillars.map((pillar, i) => (
+            <span
+              key={pillar}
+              className="font-mono text-[11px] tracking-[0.15em] uppercase text-white/50"
             >
-              <circle
-                cx="220"
-                cy="220"
-                r="208"
-                stroke="white"
-                strokeOpacity="0.12"
-                strokeWidth="1"
-                strokeDasharray="3 14"
-              />
-            </svg>
-
-            <LogoMark
-              color="white"
-              className="absolute inset-0 m-auto w-[82%] h-[82%] opacity-[0.16]"
-            />
-
-            {pillars.map((pillar) => (
-              <div
-                key={pillar.label}
-                className={`absolute ${pillar.position} animate-fade-in-up`}
-                style={{ animationDelay: pillar.enterDelay }}
-              >
-                <div
-                  className="animate-float"
-                  style={{
-                    animationDuration: pillar.floatDuration,
-                    animationDelay: pillar.floatDelay,
-                  }}
-                >
-                  <div className="flex items-center gap-3 bg-white/[0.06] border border-white/10 backdrop-blur-md rounded-lg px-4 py-3 shadow-lg shadow-black/20">
-                    <span className="text-accent">{pillar.icon}</span>
-                    <span className="text-white/85 text-xs font-semibold tracking-[0.12em] uppercase whitespace-nowrap">
-                      {pillar.label}
-                    </span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+              <span className="text-accent">0{i + 1}</span> &middot; {pillar}
+            </span>
+          ))}
         </div>
       </div>
-
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-navy/50 to-transparent" />
     </section>
   );
 }

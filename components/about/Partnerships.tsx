@@ -17,7 +17,8 @@ export default function Partnerships() {
         }`}
       >
         <MediaPanel
-          label="Partner manufacturer facility"
+          src="/images/manufacturing-render.png"
+          label="Containerized power module, engineering render"
           className="aspect-[4/3] w-full md:order-2"
         />
         <div className="space-y-6 md:order-1">

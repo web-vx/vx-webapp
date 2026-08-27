@@ -71,7 +71,7 @@ export default function Nav() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className={`text-sm font-medium tracking-wide transition-colors ${
+                  className={`font-mono text-xs uppercase tracking-[0.15em] transition-colors ${
                     scrolled
                       ? active
                         ? "text-primary"
@@ -125,7 +125,7 @@ export default function Nav() {
               <Link
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className={`text-lg font-medium transition-colors ${
+                className={`font-mono text-sm uppercase tracking-[0.15em] transition-colors ${
                   pathname === link.href
                     ? "text-primary"
                     : "text-foreground hover:text-primary"

@@ -29,7 +29,7 @@ export default function CtaBanner({
         }`}
       >
         <div>
-          <h2 className="text-2xl md:text-3xl font-bold text-white tracking-tight">
+          <h2 className="font-display font-extrabold uppercase text-2xl md:text-3xl text-white tracking-tight">
             {title}
           </h2>
           {description && (
@@ -38,7 +38,7 @@ export default function CtaBanner({
         </div>
         <Link
           href={ctaHref}
-          className="inline-flex items-center shrink-0 px-7 py-3.5 bg-primary text-white text-sm font-semibold tracking-wide rounded hover:bg-accent transition-colors"
+          className="inline-flex items-center shrink-0 px-7 py-3.5 bg-primary text-white text-sm font-bold uppercase tracking-wider hover:bg-accent transition-colors"
         >
           {ctaLabel}
         </Link>
