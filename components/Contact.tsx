@@ -68,7 +68,7 @@ export default function Contact() {
                     </svg>
                   </a>
                   <p className="text-xs text-white/50 mt-0.5">
-                    Business Relations Manager
+                    Chief Business Development Officer
                   </p>
                 </div>
               </div>

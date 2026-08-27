@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import LogoMark from "@/components/LogoMark";
 
 const links = [
   { label: "Home", href: "/" },
@@ -16,15 +15,7 @@ const links = [
 
 export default function Nav() {
   const pathname = usePathname();
-  const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, [pathname]);
 
   useEffect(() => {
     if (mobileOpen) {
@@ -38,30 +29,17 @@ export default function Nav() {
   }, [mobileOpen]);
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-white shadow-md" : "bg-transparent"
-      }`}
-    >
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
       <div className="mx-auto max-w-[1200px] px-6 flex items-center justify-between h-16 md:h-20">
-        <Link href="/" className="flex items-center gap-3 shrink-0 relative">
+        <Link href="/" className="flex items-center gap-3 shrink-0">
           <Image
             src="/logo-lockup.png"
             alt="VertexShell Solutions"
             width={438}
             height={122}
-            className={`h-9 md:h-11 w-auto transition-opacity duration-300 ${
-              scrolled ? "opacity-100" : "opacity-0"
-            }`}
+            className="h-9 md:h-11 w-auto"
             priority
           />
-          <div
-            className={`absolute transition-opacity duration-300 ${
-              scrolled ? "opacity-0" : "opacity-100"
-            }`}
-          >
-            <LogoMark color="white" className="h-9 w-9" />
-          </div>
         </Link>
 
         <ul className="hidden md:flex items-center gap-8">
@@ -72,13 +50,7 @@ export default function Nav() {
                 <Link
                   href={link.href}
                   className={`font-mono text-xs uppercase tracking-[0.15em] transition-colors ${
-                    scrolled
-                      ? active
-                        ? "text-primary"
-                        : "text-foreground hover:text-primary"
-                      : active
-                      ? "text-white"
-                      : "text-white/80 hover:text-white"
+                    active ? "text-primary" : "text-foreground hover:text-primary"
                   }`}
                 >
                   {link.label}
@@ -94,21 +66,13 @@ export default function Nav() {
           aria-label="Toggle menu"
         >
           <span
-            className={`block w-6 h-0.5 transition-all duration-300 ${
-              mobileOpen
-                ? "rotate-45 translate-y-1 bg-foreground"
-                : scrolled
-                ? "bg-foreground"
-                : "bg-white"
+            className={`block w-6 h-0.5 bg-foreground transition-all duration-300 ${
+              mobileOpen ? "rotate-45 translate-y-1" : ""
             }`}
           />
           <span
-            className={`block w-6 h-0.5 transition-all duration-300 ${
-              mobileOpen
-                ? "-rotate-45 -translate-y-1 bg-foreground"
-                : scrolled
-                ? "bg-foreground"
-                : "bg-white"
+            className={`block w-6 h-0.5 bg-foreground transition-all duration-300 ${
+              mobileOpen ? "-rotate-45 -translate-y-1" : ""
             }`}
           />
         </button>

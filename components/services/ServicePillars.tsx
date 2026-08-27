@@ -118,6 +118,7 @@ function Pillar({
         }`}
       >
         <MediaPanel
+          src={pillar.photoSrc}
           label={pillar.photoLabel}
           className={`aspect-[4/3] w-full ${reversed ? "md:order-2" : ""}`}
         />

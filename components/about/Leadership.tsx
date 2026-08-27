@@ -11,7 +11,7 @@ const team = [
   },
   {
     name: "Youssef",
-    role: "Business Relations Manager",
+    role: "Chief Business Development Officer",
     email: "youssef.azab@vertexshell.com",
   },
 ];

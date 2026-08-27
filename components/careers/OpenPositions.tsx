@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { useInView } from "@/hooks/useInView";
 
 const responsibilities = [
@@ -26,6 +26,7 @@ const requirements = [
 export default function OpenPositions() {
   const ref = useRef<HTMLDivElement>(null);
   const visible = useInView(ref);
+  const [expanded, setExpanded] = useState(false);
 
   return (
     <section className="py-16 md:py-24 bg-light">
@@ -42,8 +43,13 @@ export default function OpenPositions() {
           Current opportunities.
         </h2>
 
-        <div className="mt-10 bg-white border border-gray-100 rounded-lg p-8 md:p-10">
-          <div className="flex flex-wrap items-start justify-between gap-4">
+        <div className="mt-10 bg-white border border-gray-100 rounded-lg overflow-hidden">
+          <button
+            type="button"
+            onClick={() => setExpanded(!expanded)}
+            aria-expanded={expanded}
+            className="w-full flex flex-wrap items-center justify-between gap-4 text-left p-8 md:p-10 hover:bg-light/60 transition-colors"
+          >
             <div>
               <h3 className="text-xl font-bold text-foreground">
                 Account Manager
@@ -52,59 +58,74 @@ export default function OpenPositions() {
                 Cairo, Egypt &middot; Full-time
               </p>
             </div>
-            <a
-              href="mailto:w.azab@vertexshell.com?subject=Application%3A%20Account%20Manager"
-              className="inline-flex items-center px-6 py-3 bg-primary text-white text-sm font-semibold tracking-wide rounded hover:bg-accent transition-colors shrink-0"
+            <svg
+              viewBox="0 0 20 20"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              className={`w-5 h-5 text-primary shrink-0 transition-transform duration-300 ${
+                expanded ? "rotate-180" : ""
+              }`}
             >
-              Apply now
-            </a>
-          </div>
+              <path d="M5 7.5l5 5 5-5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </button>
 
-          <p className="mt-6 text-secondary leading-relaxed">
-            VertexShell Solutions is looking for an Account Manager to own
-            client relationships across our modular infrastructure, power
-            systems, aviation, and industrial supply lines. You will be the
-            primary point of contact for clients across the public sector,
-            energy, telecom, and industrial construction sectors, managing
-            accounts from initial inquiry through delivery and after-sales
-            support.
-          </p>
-
-          <div className="mt-8 grid md:grid-cols-2 gap-8">
-            <div>
-              <h4 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3">
-                Responsibilities
-              </h4>
-              <ul className="space-y-2.5">
-                {responsibilities.map((item) => (
-                  <li key={item} className="flex gap-2.5 text-sm text-secondary">
-                    <span className="text-primary shrink-0">&bull;</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3">
-                Requirements
-              </h4>
-              <ul className="space-y-2.5">
-                {requirements.map((item) => (
-                  <li key={item} className="flex gap-2.5 text-sm text-secondary">
-                    <span className="text-primary shrink-0">&bull;</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          <a
-            href="mailto:w.azab@vertexshell.com?subject=Application%3A%20Account%20Manager"
-            className="mt-8 inline-flex items-center px-6 py-3 bg-primary text-white text-sm font-semibold tracking-wide rounded hover:bg-accent transition-colors"
+          <div
+            className={`grid transition-[grid-template-rows] duration-300 ease-in-out ${
+              expanded ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+            }`}
           >
-            Apply now
-          </a>
+            <div className="overflow-hidden">
+              <div className="px-8 md:px-10 pb-8 md:pb-10">
+                <p className="text-secondary leading-relaxed">
+                  VertexShell Solutions is looking for an Account Manager to
+                  own client relationships across our modular infrastructure,
+                  power systems, aviation, and industrial supply lines. You
+                  will be the primary point of contact for clients across the
+                  public sector, energy, telecom, and industrial construction
+                  sectors, managing accounts from initial inquiry through
+                  delivery and after-sales support.
+                </p>
+
+                <div className="mt-8 grid md:grid-cols-2 gap-8">
+                  <div>
+                    <h4 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3">
+                      Responsibilities
+                    </h4>
+                    <ul className="space-y-2.5">
+                      {responsibilities.map((item) => (
+                        <li key={item} className="flex gap-2.5 text-sm text-secondary">
+                          <span className="text-primary shrink-0">&bull;</span>
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3">
+                      Requirements
+                    </h4>
+                    <ul className="space-y-2.5">
+                      {requirements.map((item) => (
+                        <li key={item} className="flex gap-2.5 text-sm text-secondary">
+                          <span className="text-primary shrink-0">&bull;</span>
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+                <a
+                  href="mailto:w.azab@vertexshell.com?subject=Application%3A%20Account%20Manager"
+                  className="mt-8 inline-flex items-center px-6 py-3 bg-primary text-white text-sm font-semibold tracking-wide rounded hover:bg-accent transition-colors"
+                >
+                  Apply now
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

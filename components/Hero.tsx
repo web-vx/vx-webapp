@@ -1,13 +1,6 @@
 import Link from "next/link";
 import MediaPanel from "@/components/MediaPanel";
 
-const pillars = [
-  "Aviation & Assets",
-  "Modular Infrastructure",
-  "Power Systems",
-  "Industrial Supply",
-];
-
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col justify-end bg-navy overflow-hidden">
@@ -16,8 +9,8 @@ export default function Hero() {
         label="C-130 propeller and wing on the tarmac with an aerobatic display team passing behind"
         fill
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/65 to-navy/10" />
-      <div className="absolute inset-0 bg-gradient-to-b from-navy/60 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/55 to-navy/5" />
+      <div className="absolute inset-0 bg-gradient-to-b from-navy/35 via-transparent to-transparent" />
 
       <div className="absolute bottom-8 left-8 w-8 h-8 border-b-2 border-l-2 border-white/25 hidden md:block" />
       <div className="absolute bottom-8 right-8 w-8 h-8 border-b-2 border-r-2 border-white/25 hidden md:block" />
@@ -50,17 +43,6 @@ export default function Hero() {
           >
             What we offer
           </Link>
-        </div>
-
-        <div className="mt-14 pt-6 border-t border-white/15 flex flex-wrap gap-x-8 gap-y-3">
-          {pillars.map((pillar, i) => (
-            <span
-              key={pillar}
-              className="font-mono text-[11px] tracking-[0.15em] uppercase text-white/50"
-            >
-              <span className="text-accent">0{i + 1}</span> &middot; {pillar}
-            </span>
-          ))}
         </div>
       </div>
     </section>
