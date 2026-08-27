@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Link from "next/link";
 import { useInView } from "@/hooks/useInView";
 
 const cards = [
@@ -104,6 +105,16 @@ export default function Capabilities() {
             </div>
           ))}
         </div>
+
+        <Link
+          href="/services"
+          className="mt-10 inline-flex items-center gap-2 text-primary text-sm font-semibold hover:text-accent transition-colors"
+        >
+          View all services
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-4 h-4">
+            <path d="M8 5l5 5-5 5" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </Link>
       </div>
     </section>
   );

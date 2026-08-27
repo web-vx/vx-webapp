@@ -1,6 +1,6 @@
 # VertexShell Solutions Website
 
-One-page marketing website for VertexShell Solutions, a Cairo-based supplier of modular infrastructure, prefabricated electrical systems, and industrial products.
+Marketing website for VertexShell Solutions, a Cairo-based supplier of modular infrastructure, prefabricated electrical systems, and industrial products.
 
 ## Tech Stack
 
@@ -29,19 +29,28 @@ npm start
 ```
 app/
   layout.tsx          # Root layout, metadata, fonts
-  page.tsx            # Main page (assembles all sections)
+  page.tsx            # Home page (hero, teasers, CTA)
+  about/page.tsx       # About Us page
+  services/page.tsx    # Services page
+  careers/page.tsx     # Careers page (open positions)
+  contact/page.tsx     # Contact page
   globals.css         # Tailwind imports, custom theme, animations
   sitemap.ts          # Auto-generated sitemap
 components/
-  Nav.tsx             # Sticky navigation (transparent -> white on scroll)
-  Hero.tsx            # Full-viewport hero with headline and CTAs
-  About.tsx           # Company overview
-  Capabilities.tsx    # 4-card grid of service offerings
+  Nav.tsx             # Sticky nav across all pages (transparent -> white on scroll)
+  Hero.tsx            # Full-viewport home hero with headline and CTAs
+  AboutTeaser.tsx     # Condensed About section on the home page
+  Capabilities.tsx    # 4-card services teaser on the home page
   WhyVertexShell.tsx  # Differentiators / value propositions
-  Standards.tsx       # Certification standards strip
-  Contact.tsx         # Contact info + Formspree form
-  Footer.tsx          # Footer with logo, copyright, location
+  Contact.tsx         # Contact info + Formspree form (used on /contact)
+  CtaBanner.tsx       # Reusable "get in touch" CTA strip
+  PageHero.tsx        # Reusable dark hero for inner pages
+  MediaPanel.tsx      # Placeholder panel for photos not yet available
+  Footer.tsx          # Footer with quick links, contact info, copyright
   LogoMark.tsx        # SVG logo component (dot-sphere)
+  about/              # About page sections (story, sectors, presence, partnerships, leadership)
+  services/           # Services page sections (per-pillar deep dive)
+  careers/            # Careers page sections (intro, open positions)
 hooks/
   useInView.ts        # Intersection Observer hook for scroll animations
 public/
@@ -112,8 +121,12 @@ action="https://formspree.io/f/xyzabcde"
 
 ## Content to Add Later
 
-- **Phone number**: Replace `[Phone number placeholder]` in `components/Contact.tsx`
-- **Project references / case studies**: Add a new section component between WhyVertexShell and Standards
-- **Leadership team**: Add a Team section with headshots and bios
-- **News / updates**: Add a blog section or link to LinkedIn posts
-- **OG image**: Generate a 1200x630 image and save as `public/og-image.png`
+- **Photos**: The site currently uses `MediaPanel` placeholders wherever a real photo belongs. Replace them with a `next/image` once available:
+  - Home hero / Services hero: a signature shot (aircraft, e-house install, or power skid on-site)
+  - About page: team/office photo, partner manufacturer facility
+  - Services page: one photo per pillar (aircraft; prefab e-house/shelter; containerized generator/power skid; warehouse or logistics yard)
+  - Careers page: team/office culture photo
+- **Leadership headshots**: `components/about/Leadership.tsx` currently shows initials avatars for Waleed and Youssef
+- **Project references / case studies**: Add a new section, e.g. on the Services or About page
+- **News / updates**: Add a section or link to LinkedIn posts
+- **Careers**: `components/careers/OpenPositions.tsx` has one listing (Account Manager) with placeholder compensation/benefits language; confirm the apply-to email address and details before publishing

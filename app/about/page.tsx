@@ -1,0 +1,42 @@
+import type { Metadata } from "next";
+import Nav from "@/components/Nav";
+import PageHero from "@/components/PageHero";
+import AboutStory from "@/components/about/AboutStory";
+import Sectors from "@/components/about/Sectors";
+import Presence from "@/components/about/Presence";
+import Partnerships from "@/components/about/Partnerships";
+import Leadership from "@/components/about/Leadership";
+import CtaBanner from "@/components/CtaBanner";
+import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "About Us",
+  description:
+    "VertexShell Solutions is a Cairo-based industrial supply and trading group serving public sector, energy, telecom, aviation, and industrial construction clients across Egypt, MENA, and international markets.",
+};
+
+export default function AboutPage() {
+  return (
+    <>
+      <Nav />
+      <main>
+        <PageHero
+          eyebrow="About Us"
+          title="Building solutions that endure."
+          description="A Cairo-based industrial supply and trading group delivering engineered infrastructure, power, aviation, and industrial products across demanding environments."
+          photoLabel="Cairo skyline, facility, or team photo"
+        />
+        <AboutStory />
+        <Sectors />
+        <Presence />
+        <Partnerships />
+        <Leadership />
+        <CtaBanner
+          title="Want to work with us?"
+          description="Reach out and our team will get back to you."
+        />
+      </main>
+      <Footer />
+    </>
+  );
+}

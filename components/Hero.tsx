@@ -1,4 +1,6 @@
+import Link from "next/link";
 import LogoMark from "@/components/LogoMark";
+import MediaPanel from "@/components/MediaPanel";
 
 const pillars = [
   {
@@ -65,6 +67,8 @@ const pillars = [
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center bg-navy overflow-hidden">
+      <MediaPanel label="Signature shot: aircraft, e-house install, or power skid on-site" fill className="opacity-50" />
+      <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/85 to-navy/40" />
       <div className="absolute inset-0 opacity-[0.04]">
         <div
           className="absolute inset-0"
@@ -95,18 +99,18 @@ export default function Hero() {
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
-              <a
-                href="#contact"
+              <Link
+                href="/contact"
                 className="inline-flex items-center px-7 py-3.5 bg-primary text-white text-sm font-semibold tracking-wide rounded hover:bg-accent transition-colors"
               >
                 Get in touch
-              </a>
-              <a
-                href="#capabilities"
+              </Link>
+              <Link
+                href="/services"
                 className="inline-flex items-center px-7 py-3.5 border border-white/30 text-white text-sm font-semibold tracking-wide rounded hover:bg-white/10 transition-colors"
               >
                 What we offer
-              </a>
+              </Link>
             </div>
           </div>
 

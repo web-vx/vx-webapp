@@ -8,7 +8,7 @@ export default function Contact() {
   const visible = useInView(ref);
 
   return (
-    <section id="contact" className="py-16 md:py-24 bg-navy">
+    <section id="contact" className="pt-32 pb-16 md:pt-40 md:pb-24 bg-navy">
       <div
         ref={ref}
         className={`mx-auto max-w-[1200px] px-6 ${
@@ -18,9 +18,9 @@ export default function Contact() {
         <p className="text-xs font-semibold tracking-[0.2em] uppercase text-accent mb-3">
           Get in Touch
         </p>
-        <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
+        <h1 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
           Let&apos;s talk about your next project.
-        </h2>
+        </h1>
 
         <div className="mt-12 grid md:grid-cols-2 gap-12">
           <div className="space-y-6">

@@ -2,24 +2,29 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import LogoMark from "@/components/LogoMark";
 
 const links = [
-  { label: "About", href: "#about" },
-  { label: "What We Offer", href: "#capabilities" },
-  { label: "Why VertexShell", href: "#why" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/services" },
+  { label: "Careers", href: "/careers" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Nav() {
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
+    onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [pathname]);
 
   useEffect(() => {
     if (mobileOpen) {
@@ -39,7 +44,7 @@ export default function Nav() {
       }`}
     >
       <div className="mx-auto max-w-[1200px] px-6 flex items-center justify-between h-16 md:h-20">
-        <a href="#" className="flex items-center gap-3 shrink-0 relative">
+        <Link href="/" className="flex items-center gap-3 shrink-0 relative">
           <Image
             src="/logo-lockup.png"
             alt="VertexShell Solutions"
@@ -57,23 +62,30 @@ export default function Nav() {
           >
             <LogoMark color="white" className="h-9 w-9" />
           </div>
-        </a>
+        </Link>
 
         <ul className="hidden md:flex items-center gap-8">
-          {links.map((link) => (
-            <li key={link.href}>
-              <a
-                href={link.href}
-                className={`text-sm font-medium tracking-wide transition-colors ${
-                  scrolled
-                    ? "text-foreground hover:text-primary"
-                    : "text-white/80 hover:text-white"
-                }`}
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
+          {links.map((link) => {
+            const active = pathname === link.href;
+            return (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className={`text-sm font-medium tracking-wide transition-colors ${
+                    scrolled
+                      ? active
+                        ? "text-primary"
+                        : "text-foreground hover:text-primary"
+                      : active
+                      ? "text-white"
+                      : "text-white/80 hover:text-white"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
 
         <button
@@ -110,13 +122,17 @@ export default function Nav() {
         <ul className="flex flex-col p-8 gap-6">
           {links.map((link) => (
             <li key={link.href}>
-              <a
+              <Link
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="text-lg font-medium text-foreground hover:text-primary transition-colors"
+                className={`text-lg font-medium transition-colors ${
+                  pathname === link.href
+                    ? "text-primary"
+                    : "text-foreground hover:text-primary"
+                }`}
               >
                 {link.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

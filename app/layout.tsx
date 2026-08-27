@@ -10,7 +10,10 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://vertexshell.com"),
-  title: "VertexShell Solutions | Diversified Industrial Supply",
+  title: {
+    default: "VertexShell Solutions | Diversified Industrial Supply",
+    template: "%s | VertexShell Solutions",
+  },
   description:
     "Cairo-based industrial supply and trading group delivering modular infrastructure, power systems, aviation and specialized assets, and broader industrial supply across Egypt, the MENA region, and international markets.",
   keywords: [
