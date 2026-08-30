@@ -11,6 +11,7 @@ const cards = [
     description:
       "Sourcing, acquisition, and disposal of fixed-wing and rotary aircraft and specialized assets for government and commercial operators.",
     image: "/images/aviation-fleet.png",
+    imagePosition: "object-[center_85%]",
   },
   {
     title: "Modular Infrastructure",
@@ -66,7 +67,9 @@ export default function Capabilities() {
                 src={card.image}
                 alt={card.title}
                 fill
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                className={`object-cover transition-transform duration-700 group-hover:scale-105 ${
+                  card.imagePosition ?? ""
+                }`}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/50 to-transparent" />
               <span className="absolute top-5 left-5 font-mono text-xs text-white/60">
