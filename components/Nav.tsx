@@ -30,14 +30,14 @@ export default function Nav() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
-      <div className="mx-auto max-w-[1200px] px-6 flex items-center justify-between h-16 md:h-20">
+      <div className="mx-auto max-w-[1200px] px-6 flex items-center justify-between h-20 md:h-24">
         <Link href="/" className="flex items-center gap-3 shrink-0">
           <Image
             src="/logo-lockup.png"
             alt="VertexShell Solutions"
             width={438}
             height={122}
-            className="h-11 md:h-14 w-auto"
+            className="h-14 md:h-18 w-auto"
             priority
           />
         </Link>
@@ -79,7 +79,7 @@ export default function Nav() {
       </div>
 
       <div
-        className={`md:hidden fixed inset-0 top-16 bg-white transition-transform duration-300 ${
+        className={`md:hidden fixed inset-0 top-20 bg-white transition-transform duration-300 ${
           mobileOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
