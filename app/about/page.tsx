@@ -5,7 +5,6 @@ import AboutStory from "@/components/about/AboutStory";
 import Sectors from "@/components/about/Sectors";
 import Presence from "@/components/about/Presence";
 import Partnerships from "@/components/about/Partnerships";
-import Leadership from "@/components/about/Leadership";
 import CtaBanner from "@/components/CtaBanner";
 import Footer from "@/components/Footer";
 
@@ -29,7 +28,6 @@ export default function AboutPage() {
         <Sectors />
         <Presence />
         <Partnerships />
-        <Leadership />
         <CtaBanner
           title="Want to work with us?"
           description="Reach out and our team will get back to you."
