@@ -37,7 +37,7 @@ export default function Nav() {
             alt="VertexShell Solutions"
             width={438}
             height={122}
-            className="h-9 md:h-11 w-auto"
+            className="h-11 md:h-14 w-auto"
             priority
           />
         </Link>
