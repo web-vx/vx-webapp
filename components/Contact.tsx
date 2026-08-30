@@ -32,7 +32,7 @@ export default function Contact() {
                 href="mailto:youssef.azab@vertexshell.com"
                 className="inline-flex items-center gap-1.5 text-accent underline underline-offset-4 decoration-accent/40 hover:text-white hover:decoration-white transition-colors"
               >
-                youssef.azab@vertexshell.com
+                Email us
                 <svg
                   viewBox="0 0 20 20"
                   fill="none"

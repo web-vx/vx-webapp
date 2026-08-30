@@ -52,10 +52,10 @@ export const metadata: Metadata = {
     siteName: "VertexShell Solutions",
     images: [
       {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "VertexShell Solutions - Diversified Industrial Supply for Demanding Operations",
+        url: "/logo-blue-bg.jpg",
+        width: 2000,
+        height: 2000,
+        alt: "VertexShell Solutions",
       },
     ],
     locale: "en_US",
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: "/favicon.png",
+    icon: "/favicon.png?v=2",
   },
 };
 
