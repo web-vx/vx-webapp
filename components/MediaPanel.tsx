@@ -19,8 +19,8 @@ export default function MediaPanel({
   imgClassName = "",
   fill = false,
 }: MediaPanelProps) {
-  const wrapperClassName = `relative overflow-hidden bg-navy ${
-    fill ? "absolute inset-0" : ""
+  const wrapperClassName = `overflow-hidden bg-navy ${
+    fill ? "absolute inset-0" : "relative"
   } ${className}`;
 
   if (src) {
