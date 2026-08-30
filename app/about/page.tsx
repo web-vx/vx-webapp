@@ -24,7 +24,6 @@ export default function AboutPage() {
           eyebrow="About Us"
           title="Building solutions that endure."
           description="An industrial supply and trading group delivering engineered infrastructure, power, aviation, and industrial products across demanding environments."
-          photoLabel="Cairo skyline, facility, or team photo"
         />
         <AboutStory />
         <Sectors />

@@ -40,7 +40,8 @@ export default function AboutStory() {
           </p>
         </div>
         <MediaPanel
-          label="VertexShell team or Cairo office"
+          src="/images/office-background.jpg"
+          label="VertexShell office"
           className="aspect-[4/3] w-full"
         />
       </div>
