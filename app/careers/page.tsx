@@ -19,7 +19,8 @@ export default function CareersPage() {
           eyebrow="Careers"
           title="Build your career at VertexShell."
           description="We're a small, growing team working across some of the most demanding industrial sectors in the region. Here's what's open right now."
-          photoLabel="Team or office culture photo"
+          photoSrc="/images/office-background.jpg"
+          photoLabel="Modern open-plan office at dusk"
         />
         <OpenPositions />
       </main>

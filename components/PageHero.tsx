@@ -5,12 +5,15 @@ interface PageHeroProps {
   title: string;
   description?: string;
   photoLabel?: string;
+  photoSrc?: string;
 }
 
-export default function PageHero({ eyebrow, title, description, photoLabel }: PageHeroProps) {
+export default function PageHero({ eyebrow, title, description, photoLabel, photoSrc }: PageHeroProps) {
   return (
     <section className="relative bg-navy overflow-hidden pt-32 pb-16 md:pt-40 md:pb-20">
-      {photoLabel && <MediaPanel label={photoLabel} fill className="opacity-60" />}
+      {photoLabel && (
+        <MediaPanel src={photoSrc} label={photoLabel} fill className="opacity-60" />
+      )}
       <div className="absolute inset-0 bg-gradient-to-b from-navy/40 via-navy/70 to-navy" />
 
       <div className="relative mx-auto max-w-[1200px] px-6">
