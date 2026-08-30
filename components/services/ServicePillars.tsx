@@ -17,6 +17,7 @@ const pillars = [
     ],
     photoSrc: "/images/aviation-fleet.png",
     photoLabel: "C-130 Hercules and CH-47 Chinook in flight",
+    imgClassName: "object-[center_85%]",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2" className="w-10 h-10">
         <path
@@ -120,6 +121,7 @@ function Pillar({
         <MediaPanel
           src={pillar.photoSrc}
           label={pillar.photoLabel}
+          imgClassName={pillar.imgClassName}
           className={`aspect-[4/3] w-full ${reversed ? "md:order-2" : ""}`}
         />
         <div className={reversed ? "md:order-1" : ""}>

@@ -7,10 +7,10 @@ export default function Hero() {
       <MediaPanel
         src="/images/hero-background.png"
         label="C-130 propeller and wing on the tarmac with an aerobatic display team passing behind"
+        imgClassName="object-[center_35%]"
         fill
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/55 to-navy/5" />
-      <div className="absolute inset-0 bg-gradient-to-b from-navy/35 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/30 to-transparent" />
 
       <div className="absolute bottom-8 left-8 w-8 h-8 border-b-2 border-l-2 border-white/25 hidden md:block" />
       <div className="absolute bottom-8 right-8 w-8 h-8 border-b-2 border-r-2 border-white/25 hidden md:block" />
@@ -26,8 +26,8 @@ export default function Hero() {
 
         <p className="mt-6 text-lg md:text-xl text-white/70 leading-relaxed max-w-xl">
           Engineered infrastructure, power systems, aviation and specialized
-          assets, and broader industrial supply, delivered across Egypt, the
-          MENA region, and international markets.
+          assets, and broader industrial supply, delivered across the MENA
+          region and international markets.
         </p>
 
         <div className="mt-10 flex flex-wrap gap-4">

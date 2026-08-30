@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Modular infrastructure, power systems, aviation and specialized assets, and industrial supply, sourced, engineered, and delivered across Egypt, MENA, and international markets.",
+    "Modular infrastructure, power systems, aviation and specialized assets, and industrial supply, sourced, engineered, and delivered across MENA and international markets.",
 };
 
 export default function ServicesPage() {

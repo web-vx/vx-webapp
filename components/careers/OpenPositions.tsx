@@ -11,7 +11,7 @@ const responsibilities = [
   "Maintain accurate account records and pipeline forecasts",
   "Build long-term relationships with key decision-makers to identify repeat and expansion opportunities",
   "Coordinate handover to project and delivery teams, and stay engaged through installation and commissioning",
-  "Represent VertexShell at client meetings, site visits, and industry events across Egypt and the MENA region",
+  "Represent VertexShell at client meetings, site visits, and industry events across the MENA region",
 ];
 
 const requirements = [
@@ -20,7 +20,7 @@ const requirements = [
   "Strong communication and negotiation skills in English and Arabic",
   "Comfortable working with technical product specifications and cross-functional teams",
   "Organized and able to manage multiple accounts and deadlines simultaneously",
-  "Willingness to travel within Egypt and the MENA region as needed",
+  "Willingness to travel within the MENA region as needed",
 ];
 
 export default function OpenPositions() {

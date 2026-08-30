@@ -12,7 +12,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "VertexShell Solutions is a Cairo-based industrial supply and trading group serving public sector, energy, telecom, aviation, and industrial construction clients across Egypt, MENA, and international markets.",
+    "VertexShell Solutions is a Cairo-based industrial supply and trading group serving public sector, energy, telecom, aviation, and industrial construction clients across MENA and international markets.",
 };
 
 export default function AboutPage() {

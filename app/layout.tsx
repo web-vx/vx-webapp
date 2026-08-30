@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     template: "%s | VertexShell Solutions",
   },
   description:
-    "Cairo-based industrial supply and trading group delivering modular infrastructure, power systems, aviation and specialized assets, and broader industrial supply across Egypt, the MENA region, and international markets.",
+    "Cairo-based industrial supply and trading group delivering modular infrastructure, power systems, aviation and specialized assets, and broader industrial supply across the MENA region and international markets.",
   keywords: [
     "industrial supply",
     "trading group",
@@ -41,14 +41,13 @@ export const metadata: Metadata = {
     "aviation",
     "specialized assets",
     "MENA",
-    "Egypt",
     "oil and gas",
     "telecom infrastructure",
   ],
   openGraph: {
     title: "VertexShell Solutions | Diversified Industrial Supply",
     description:
-      "Cairo-based industrial supply and trading group delivering modular infrastructure, power systems, aviation and specialized assets, and broader industrial supply across Egypt, the MENA region, and international markets.",
+      "Cairo-based industrial supply and trading group delivering modular infrastructure, power systems, aviation and specialized assets, and broader industrial supply across the MENA region and international markets.",
     url: "https://vertexshell.com",
     siteName: "VertexShell Solutions",
     images: [
@@ -66,7 +65,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "VertexShell Solutions | Diversified Industrial Supply",
     description:
-      "Cairo-based industrial supply and trading group delivering modular infrastructure, power, aviation, and specialized supply across Egypt, MENA, and international markets.",
+      "Cairo-based industrial supply and trading group delivering modular infrastructure, power, aviation, and specialized supply across MENA and international markets.",
   },
   robots: {
     index: true,

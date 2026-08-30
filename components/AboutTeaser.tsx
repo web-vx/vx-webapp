@@ -28,8 +28,8 @@ export default function AboutTeaser() {
               VertexShell Solutions is a Cairo-based industrial supply and
               trading group serving the public sector, oil &amp; gas,
               petrochemical, power generation, telecommunications, aviation,
-              and industrial construction sectors across Egypt, the MENA
-              region, and international markets.
+              and industrial construction sectors across the MENA
+              region and international markets.
             </p>
           </div>
           <Link

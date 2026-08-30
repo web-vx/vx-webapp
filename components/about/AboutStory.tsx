@@ -24,7 +24,7 @@ export default function AboutStory() {
             VertexShell Solutions is a Cairo-based industrial supply and
             trading group serving the public sector, oil &amp; gas,
             petrochemical, power generation, telecommunications, aviation, and
-            industrial construction sectors across Egypt, the MENA region, and
+            industrial construction sectors across the MENA region and
             international markets. We source, engineer, and deliver
             factory-built infrastructure, specialized assets, and industrial
             products, adapted for commercial and field deployment in

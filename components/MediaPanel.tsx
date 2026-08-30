@@ -4,6 +4,7 @@ interface MediaPanelProps {
   label: string;
   src?: string;
   className?: string;
+  imgClassName?: string;
   fill?: boolean;
 }
 
@@ -11,7 +12,13 @@ interface MediaPanelProps {
  * Renders the photo at `src` when supplied; otherwise shows a "photo needed"
  * placeholder captioned with `label` so missing shots stay visible during dev.
  */
-export default function MediaPanel({ label, src, className = "", fill = false }: MediaPanelProps) {
+export default function MediaPanel({
+  label,
+  src,
+  className = "",
+  imgClassName = "",
+  fill = false,
+}: MediaPanelProps) {
   const wrapperClassName = `relative overflow-hidden bg-navy ${
     fill ? "absolute inset-0" : ""
   } ${className}`;
@@ -19,7 +26,7 @@ export default function MediaPanel({ label, src, className = "", fill = false }:
   if (src) {
     return (
       <div className={wrapperClassName}>
-        <Image src={src} alt={label} fill className="object-cover" />
+        <Image src={src} alt={label} fill className={`object-cover ${imgClassName}`} />
       </div>
     );
   }

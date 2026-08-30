@@ -28,50 +28,22 @@ export default function Contact() {
               <h3 className="text-sm font-semibold text-white/60 uppercase tracking-wider mb-3">
                 Email
               </h3>
-              <div className="space-y-4">
-                <div>
-                  <a
-                    href="mailto:w.azab@vertexshell.com"
-                    className="inline-flex items-center gap-1.5 text-accent underline underline-offset-4 decoration-accent/40 hover:text-white hover:decoration-white transition-colors"
-                  >
-                    Waleed
-                    <svg
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.6"
-                      className="w-3.5 h-3.5"
-                    >
-                      <rect x="2.5" y="4.5" width="15" height="11" rx="1.5" />
-                      <path d="M3 5.5l7 5.5 7-5.5" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </a>
-                  <p className="text-xs text-white/50 mt-0.5">
-                    Managing Director
-                  </p>
-                </div>
-                <div>
-                  <a
-                    href="mailto:youssef.azab@vertexshell.com"
-                    className="inline-flex items-center gap-1.5 text-accent underline underline-offset-4 decoration-accent/40 hover:text-white hover:decoration-white transition-colors"
-                  >
-                    Youssef
-                    <svg
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.6"
-                      className="w-3.5 h-3.5"
-                    >
-                      <rect x="2.5" y="4.5" width="15" height="11" rx="1.5" />
-                      <path d="M3 5.5l7 5.5 7-5.5" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </a>
-                  <p className="text-xs text-white/50 mt-0.5">
-                    Chief Business Development Officer
-                  </p>
-                </div>
-              </div>
+              <a
+                href="mailto:youssef.azab@vertexshell.com"
+                className="inline-flex items-center gap-1.5 text-accent underline underline-offset-4 decoration-accent/40 hover:text-white hover:decoration-white transition-colors"
+              >
+                youssef.azab@vertexshell.com
+                <svg
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.6"
+                  className="w-3.5 h-3.5"
+                >
+                  <rect x="2.5" y="4.5" width="15" height="11" rx="1.5" />
+                  <path d="M3 5.5l7 5.5 7-5.5" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </a>
             </div>
 
             <div>
