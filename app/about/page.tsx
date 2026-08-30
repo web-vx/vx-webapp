@@ -23,7 +23,7 @@ export default function AboutPage() {
         <PageHero
           eyebrow="About Us"
           title="Building solutions that endure."
-          description="A Cairo-based industrial supply and trading group delivering engineered infrastructure, power, aviation, and industrial products across demanding environments."
+          description="An industrial supply and trading group delivering engineered infrastructure, power, aviation, and industrial products across demanding environments."
           photoLabel="Cairo skyline, facility, or team photo"
         />
         <AboutStory />
