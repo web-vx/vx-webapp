@@ -24,7 +24,7 @@ export default function About() {
 
         <div className="mt-8 grid md:grid-cols-2 gap-8">
           <p className="text-secondary leading-relaxed">
-            VertexShell Solutions is a Cairo-based industrial supply and trading
+            VertexShell Solutions is an industrial supply and trading
             group serving the public sector, oil &amp; gas, petrochemical, power
             generation, telecommunications, aviation, and industrial
             construction sectors across the MENA region and

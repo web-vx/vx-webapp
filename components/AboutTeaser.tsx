@@ -25,7 +25,7 @@ export default function AboutTeaser() {
               Building Solutions That Endure
             </h2>
             <p className="mt-6 text-secondary leading-relaxed max-w-2xl">
-              VertexShell Solutions is a Cairo-based industrial supply and
+              VertexShell Solutions is an industrial supply and
               trading group serving the public sector, oil &amp; gas,
               petrochemical, power generation, telecommunications, aviation,
               and industrial construction sectors across the MENA
