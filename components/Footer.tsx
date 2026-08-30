@@ -48,7 +48,7 @@ export default function Footer() {
                 href="mailto:w.azab@vertexshell.com"
                 className="text-white/70 hover:text-white transition-colors"
               >
-                w.azab@vertexshell.com
+                Email us
               </a>
             </li>
             <li>
@@ -56,7 +56,7 @@ export default function Footer() {
                 href="tel:+201222118511"
                 className="text-white/70 hover:text-white transition-colors"
               >
-                +20 122 211 8511
+                Call us
               </a>
             </li>
             <li className="text-white/50">Cairo, Egypt</li>
