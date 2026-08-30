@@ -16,10 +16,6 @@ export default function Hero() {
       <div className="absolute bottom-8 right-8 w-8 h-8 border-b-2 border-r-2 border-white/25 hidden md:block" />
 
       <div className="relative mx-auto max-w-[1200px] px-6 pt-44 pb-14 w-full">
-        <p className="font-mono text-xs tracking-[0.25em] uppercase text-accent mb-6">
-          Cairo, Egypt &middot; MENA &amp; International
-        </p>
-
         <h1 className="font-display font-extrabold uppercase text-white leading-[0.95] tracking-tight text-5xl sm:text-6xl md:text-7xl lg:text-[5.25rem] max-w-4xl">
           Diversified Industrial Supply for Demanding Operations
         </h1>
