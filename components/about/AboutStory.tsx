@@ -21,22 +21,18 @@ export default function AboutStory() {
             Our Story
           </p>
           <p className="text-secondary leading-relaxed">
-            VertexShell Solutions is an industrial supply and
-            trading group serving the public sector, oil &amp; gas,
-            petrochemical, power generation, telecommunications, aviation, and
-            industrial construction sectors across the MENA region and
-            international markets. We source, engineer, and deliver
-            factory-built infrastructure, specialized assets, and industrial
-            products, adapted for commercial and field deployment in
-            demanding environments.
+            VertexShell is a group of companies based in Cairo, serving the
+            public sector, oil &amp; gas, petrochemical, power generation,
+            telecommunications, aviation, industrial construction, and food and
+            commodity markets across the MENA region and international markets.
           </p>
           <p className="text-secondary leading-relaxed">
-            Through partnerships with leading European and international
-            manufacturers, including producers with decades of
-            harsh-environment and defense-grade experience, our offering
-            combines engineering depth, build quality, and a broad sourcing
-            network, delivered through a locally-based commercial and project
-            team.
+            Advanced Solutions sources, engineers, and delivers factory-built
+            infrastructure, specialized assets, and industrial products for
+            demanding environments. Trading Solutions imports and exports food
+            and beverage products, raw materials, and equipment. Both draw on
+            the same international sourcing network and are delivered by a
+            locally-based commercial and project team.
           </p>
         </div>
         <MediaPanel

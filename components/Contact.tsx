@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import { useInView } from "@/hooks/useInView";
+import EnquirySelect from "@/components/EnquirySelect";
 
 export default function Contact() {
   const ref = useRef<HTMLDivElement>(null);
@@ -81,7 +82,7 @@ export default function Contact() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 text-accent underline underline-offset-4 decoration-accent/40 hover:text-white hover:decoration-white transition-colors"
               >
-                VertexShell Solutions
+                VertexShell
                 <svg
                   viewBox="0 0 20 20"
                   fill="none"
@@ -109,6 +110,7 @@ export default function Contact() {
             method="POST"
             className="space-y-5"
           >
+            <EnquirySelect />
             <div>
               <label htmlFor="name" className="sr-only">
                 Name

@@ -23,7 +23,7 @@ export default function Partnerships() {
         />
         <div className="space-y-6 md:order-1">
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-primary">
-            Manufacturing Partnerships
+            Advanced Solutions · Manufacturing Partnerships
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">
             A network built on engineering pedigree.

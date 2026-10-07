@@ -11,6 +11,8 @@ const sectors = [
   "Telecommunications",
   "Aviation",
   "Industrial Construction",
+  "Food & Beverage",
+  "Manufacturing & Raw Materials",
 ];
 
 export default function Sectors() {

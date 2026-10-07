@@ -1,3 +1,4 @@
+import Image from "next/image";
 import MediaPanel from "@/components/MediaPanel";
 
 interface PageHeroProps {
@@ -6,9 +7,19 @@ interface PageHeroProps {
   description?: string;
   photoLabel?: string;
   photoSrc?: string;
+  logoSrc?: string;
+  logoAlt?: string;
 }
 
-export default function PageHero({ eyebrow, title, description, photoLabel, photoSrc }: PageHeroProps) {
+export default function PageHero({
+  eyebrow,
+  title,
+  description,
+  photoLabel,
+  photoSrc,
+  logoSrc,
+  logoAlt = "",
+}: PageHeroProps) {
   return (
     <section className="relative bg-navy overflow-hidden pt-32 pb-16 md:pt-40 md:pb-20">
       {photoLabel && (
@@ -17,6 +28,15 @@ export default function PageHero({ eyebrow, title, description, photoLabel, phot
       <div className="absolute inset-0 bg-gradient-to-b from-navy/40 via-navy/70 to-navy" />
 
       <div className="relative mx-auto max-w-[1200px] px-6">
+        {logoSrc && (
+          <Image
+            src={logoSrc}
+            alt={logoAlt}
+            width={1617}
+            height={406}
+            className="h-12 md:h-16 w-auto mb-8 animate-fade-in-up"
+          />
+        )}
         <p className="font-mono text-xs tracking-[0.25em] uppercase text-accent mb-3 animate-fade-in-up">
           {eyebrow}
         </p>

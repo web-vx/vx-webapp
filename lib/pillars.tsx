@@ -1,10 +1,14 @@
-"use client";
+import type { Pillar } from "@/components/PillarList";
 
-import { useRef } from "react";
-import { useInView } from "@/hooks/useInView";
-import MediaPanel from "@/components/MediaPanel";
+const iconProps = {
+  viewBox: "0 0 48 48",
+  fill: "none",
+  stroke: "currentColor",
+  strokeWidth: 2,
+  className: "w-10 h-10",
+};
 
-const pillars = [
+export const advancedPillars: Pillar[] = [
   {
     title: "Aviation & Specialized Assets",
     description:
@@ -19,7 +23,7 @@ const pillars = [
     photoLabel: "C-130 Hercules and CH-47 Chinook in flight",
     imgClassName: "object-[center_85%]",
     icon: (
-      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2" className="w-10 h-10">
+      <svg {...iconProps}>
         <path
           d="M24 4c2 0 3 2 3 5v9l17 9v4l-17-4v9l5 4v4l-8-3-8 3v-4l5-4v-9L4 31v-4l17-9V9c0-3 1-5 3-5z"
           strokeLinecap="round"
@@ -41,7 +45,7 @@ const pillars = [
     photoSrc: "/images/modular-e-house.png",
     photoLabel: "E-house control shelter, cutaway engineering render",
     icon: (
-      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2" className="w-10 h-10">
+      <svg {...iconProps}>
         <rect x="6" y="18" width="36" height="24" rx="2" />
         <path d="M6 18L24 6l18 12" />
         <rect x="18" y="28" width="12" height="14" />
@@ -63,7 +67,7 @@ const pillars = [
     photoSrc: "/images/power-genset.png",
     photoLabel: "Containerized power generator skid",
     icon: (
-      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2" className="w-10 h-10">
+      <svg {...iconProps}>
         <path d="M20 6l4 14h-8l4 14" strokeLinecap="round" strokeLinejoin="round" />
         <rect x="8" y="34" width="32" height="8" rx="2" />
         <line x1="14" y1="38" x2="18" y2="38" />
@@ -86,7 +90,7 @@ const pillars = [
     photoSrc: "/images/logistics-yard.png",
     photoLabel: "Aerial view of a logistics and container yard",
     icon: (
-      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2" className="w-10 h-10">
+      <svg {...iconProps}>
         <circle cx="24" cy="24" r="18" />
         <circle cx="24" cy="24" r="6" />
         <line x1="24" y1="6" x2="24" y2="18" />
@@ -98,70 +102,64 @@ const pillars = [
   },
 ];
 
-function Pillar({
-  pillar,
-  reversed,
-}: {
-  pillar: (typeof pillars)[number];
-  reversed: boolean;
-}) {
-  const ref = useRef<HTMLDivElement>(null);
-  const visible = useInView(ref);
-
-  return (
-    <div
-      ref={ref}
-      className={`py-16 md:py-20 ${reversed ? "bg-light" : "bg-white"}`}
-    >
-      <div
-        className={`mx-auto max-w-[1200px] px-6 grid md:grid-cols-2 gap-12 items-center ${
-          visible ? "animate-fade-in-up" : "opacity-0"
-        }`}
-      >
-        <MediaPanel
-          src={pillar.photoSrc}
-          label={pillar.photoLabel}
-          imgClassName={pillar.imgClassName}
-          className={`aspect-[4/3] w-full ${reversed ? "md:order-2" : ""}`}
+export const tradingPillars: Pillar[] = [
+  {
+    title: "Food & Beverage",
+    description:
+      "Import and export of packaged food and beverage products between producers and buyers across MENA and international markets. Sourcing, documentation, and delivery handled through a single accountable team.",
+    bullets: [
+      "Import and export of packaged food and beverage products",
+      "Producer and buyer matching across regional and international markets",
+      "Specification, quality, and documentation checks before shipment",
+      "Coordinated delivery from origin to destination",
+    ],
+    photoLabel: "Food and beverage cargo, photo needed",
+    icon: (
+      <svg {...iconProps}>
+        <path d="M14 6h20l-2 8H16z" strokeLinejoin="round" />
+        <path d="M16 14v26a2 2 0 002 2h12a2 2 0 002-2V14" strokeLinejoin="round" />
+        <line x1="16" y1="24" x2="32" y2="24" />
+      </svg>
+    ),
+  },
+  {
+    title: "Raw Materials",
+    description:
+      "Trading of industrial and commercial raw materials for manufacturers, contractors, and processors. We identify reliable origins, agree terms, and move material to site.",
+    bullets: [
+      "Sourcing of industrial and commercial raw materials",
+      "Supplier identification and commercial negotiation",
+      "Bulk and containerized shipment coordination",
+      "Import and export support for manufacturers and processors",
+    ],
+    photoLabel: "Bulk raw materials at port, photo needed",
+    icon: (
+      <svg {...iconProps}>
+        <path d="M24 6l16 9v18l-16 9-16-9V15z" strokeLinejoin="round" />
+        <path d="M8 15l16 9 16-9" strokeLinejoin="round" />
+        <line x1="24" y1="24" x2="24" y2="42" />
+      </svg>
+    ),
+  },
+  {
+    title: "Equipment",
+    description:
+      "Import and export of industrial and commercial equipment, new and used, for operators and contractors who need dependable supply and clean paperwork.",
+    bullets: [
+      "Industrial and commercial equipment sourcing",
+      "New and used equipment, inspected and documented",
+      "Export support for equipment leaving the region",
+      "Shipping, customs, and handover coordinated end to end",
+    ],
+    photoLabel: "Containerized equipment shipment, photo needed",
+    icon: (
+      <svg {...iconProps}>
+        <circle cx="24" cy="24" r="7" />
+        <path
+          d="M24 5v6M24 37v6M5 24h6M37 24h6M10.6 10.6l4.2 4.2M33.2 33.2l4.2 4.2M10.6 37.4l4.2-4.2M33.2 14.8l4.2-4.2"
+          strokeLinecap="round"
         />
-        <div className={reversed ? "md:order-1" : ""}>
-          <div className="text-primary mb-4">{pillar.icon}</div>
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground tracking-tight">
-            {pillar.title}
-          </h2>
-          <p className="mt-4 text-secondary leading-relaxed">
-            {pillar.description}
-          </p>
-          <ul className="mt-6 space-y-3">
-            {pillar.bullets.map((bullet) => (
-              <li key={bullet} className="flex gap-3 text-sm text-secondary">
-                <svg
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="w-4 h-4 text-primary shrink-0 mt-0.5"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-                {bullet}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-export default function ServicePillars() {
-  return (
-    <>
-      {pillars.map((pillar, i) => (
-        <Pillar key={pillar.title} pillar={pillar} reversed={i % 2 === 1} />
-      ))}
-    </>
-  );
-}
+      </svg>
+    ),
+  },
+];

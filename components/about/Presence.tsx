@@ -17,7 +17,7 @@ const regions = [
   {
     title: "International",
     description:
-      "Sourcing and manufacturing partnerships across Europe, Turkey, and other international markets.",
+      "Sourcing, manufacturing, and trading partnerships across Europe, Turkey, and other international markets.",
   },
 ];
 

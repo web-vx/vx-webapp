@@ -25,11 +25,12 @@ export default function AboutTeaser() {
               Building Solutions That Endure
             </h2>
             <p className="mt-6 text-secondary leading-relaxed max-w-2xl">
-              VertexShell Solutions is an industrial supply and
-              trading group serving the public sector, oil &amp; gas,
-              petrochemical, power generation, telecommunications, aviation,
-              and industrial construction sectors across the MENA
-              region and international markets.
+              VertexShell is a group of companies serving the public sector, energy,
+              telecommunications, aviation, industrial construction, and food
+              and commodity markets across the MENA region and international
+              markets. Advanced Solutions engineers and supplies infrastructure
+              and specialized assets, and Trading Solutions imports and exports
+              the goods behind them.
             </p>
           </div>
           <Link

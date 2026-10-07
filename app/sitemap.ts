@@ -1,7 +1,14 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = ["", "/about", "/services", "/careers", "/contact"];
+  const routes = [
+    "",
+    "/about",
+    "/advanced-solutions",
+    "/trading-solutions",
+    "/careers",
+    "/contact",
+  ];
 
   return routes.map((route) => ({
     url: `https://vertexshell.com${route}`,

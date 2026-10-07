@@ -17,13 +17,13 @@ export default function Hero() {
 
       <div className="relative mx-auto max-w-[1200px] px-6 pt-44 pb-14 w-full">
         <h1 className="font-display font-extrabold uppercase text-white leading-[0.95] tracking-tight text-5xl sm:text-6xl md:text-7xl lg:text-[5.25rem] max-w-4xl">
-          Diversified Industrial Supply for Demanding Operations
+          One Group. Two Companies. Built for Demanding Operations.
         </h1>
 
         <p className="mt-6 text-lg md:text-xl text-white/70 leading-relaxed max-w-xl">
-          Engineered infrastructure, power systems, aviation and specialized
-          assets, and broader industrial supply, delivered across the MENA
-          region and international markets.
+          VertexShell is a group of companies delivering engineered
+          infrastructure, power systems, aviation and specialized assets, and
+          international trading across the MENA region and beyond.
         </p>
 
         <div className="mt-10 flex flex-wrap gap-4">
@@ -34,10 +34,10 @@ export default function Hero() {
             Get in touch
           </Link>
           <Link
-            href="/services"
+            href="/#companies"
             className="inline-flex items-center px-8 py-4 border border-white/40 text-white text-sm font-bold uppercase tracking-wider hover:border-white hover:bg-white/10 transition-colors"
           >
-            What we offer
+            Our companies
           </Link>
         </div>
       </div>

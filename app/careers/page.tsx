@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Careers",
   description:
-    "Join VertexShell Solutions in Cairo, Egypt, and build a career across modular infrastructure, power systems, aviation, and industrial supply.",
+    "Join VertexShell in Cairo, Egypt, and build a career across engineered infrastructure, power systems, aviation, industrial supply, and international trading.",
 };
 
 export default function CareersPage() {

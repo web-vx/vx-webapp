@@ -8,7 +8,8 @@ import { usePathname } from "next/navigation";
 const links = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
-  { label: "Services", href: "/services" },
+  { label: "Advanced Solutions", href: "/advanced-solutions" },
+  { label: "Trading Solutions", href: "/trading-solutions" },
   { label: "Careers", href: "/careers" },
   { label: "Contact", href: "/contact" },
 ];
@@ -30,19 +31,19 @@ export default function Nav() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
-      <div className="mx-auto max-w-[1200px] px-6 flex items-center justify-between h-20 md:h-24">
+      <div className="mx-auto max-w-[1200px] px-6 flex items-center justify-between h-20 lg:h-24">
         <Link href="/" className="flex items-center gap-3 shrink-0">
           <Image
-            src="/logo-lockup.png"
-            alt="VertexShell Solutions"
-            width={438}
-            height={122}
-            className="h-14 md:h-18 w-auto"
+            src="/brand/group.png"
+            alt="VertexShell Group"
+            width={1628}
+            height={370}
+            className="h-12 sm:h-14 lg:h-16 w-auto"
             priority
           />
         </Link>
 
-        <ul className="hidden md:flex items-center gap-8">
+        <ul className="hidden lg:flex items-center gap-8">
           {links.map((link) => {
             const active = pathname === link.href;
             return (
@@ -62,7 +63,7 @@ export default function Nav() {
 
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden relative w-11 h-11 -mr-1.5 flex flex-col items-center justify-center gap-1.5"
+          className="lg:hidden relative w-11 h-11 -mr-1.5 flex flex-col items-center justify-center gap-1.5"
           aria-label="Toggle menu"
         >
           <span
@@ -79,7 +80,7 @@ export default function Nav() {
       </div>
 
       <div
-        className={`md:hidden fixed inset-0 top-20 bg-white transition-transform duration-300 ${
+        className={`lg:hidden fixed inset-0 top-20 bg-white transition-transform duration-300 ${
           mobileOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >

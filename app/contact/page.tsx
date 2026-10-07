@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with VertexShell Solutions in Cairo, Egypt, for modular infrastructure, power systems, aviation, and industrial supply requirements.",
+    "Get in touch with VertexShell in Cairo, Egypt, for engineered infrastructure, power, aviation, industrial supply, and import and export requirements.",
 };
 
 export default function ContactPage() {

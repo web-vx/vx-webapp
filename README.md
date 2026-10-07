@@ -1,6 +1,6 @@
-# VertexShell Solutions Website
+# VertexShell Website
 
-Marketing website for VertexShell Solutions, a Cairo-based supplier of modular infrastructure, prefabricated electrical systems, and industrial products.
+Marketing website for VertexShell, a Cairo-based group of companies: VertexShell Advanced Solutions (aviation and specialized assets, modular infrastructure, power systems, industrial supply) and VertexShell Trading Solutions (import and export of food and beverage, raw materials, and equipment).
 
 ## Tech Stack
 
@@ -31,7 +31,8 @@ app/
   layout.tsx          # Root layout, metadata, fonts
   page.tsx            # Home page (hero, teasers, CTA)
   about/page.tsx       # About Us page
-  services/page.tsx    # Services page
+  advanced-solutions/page.tsx  # Advanced Solutions company page (was /services, which redirects here)
+  trading-solutions/page.tsx   # Trading Solutions company page
   careers/page.tsx     # Careers page (open positions)
   contact/page.tsx     # Contact page
   globals.css         # Tailwind imports, custom theme, animations
@@ -40,22 +41,27 @@ components/
   Nav.tsx             # Sticky nav across all pages (transparent -> white on scroll)
   Hero.tsx            # Full-viewport home hero with headline and CTAs
   AboutTeaser.tsx     # Condensed About section on the home page
-  Capabilities.tsx    # 4-card services teaser on the home page
+  Companies.tsx       # Two-company cards on the home page
+  PillarList.tsx      # Alternating service rows used by both company pages
+  EnquirySelect.tsx   # "Enquiring about" field on the contact form
   WhyVertexShell.tsx  # Differentiators / value propositions
   Contact.tsx         # Contact info + Formspree form (used on /contact)
   CtaBanner.tsx       # Reusable "get in touch" CTA strip
   PageHero.tsx        # Reusable dark hero for inner pages
   MediaPanel.tsx      # Placeholder panel for photos not yet available
   Footer.tsx          # Footer with quick links, contact info, copyright
-  LogoMark.tsx        # SVG logo component (dot-sphere)
-  about/              # About page sections (story, sectors, presence, partnerships, leadership)
-  services/           # Services page sections (per-pillar deep dive)
+  about/              # About page sections (story, group structure, sectors, presence, partnerships)
+  trading/            # Trading Solutions page sections
   careers/            # Careers page sections (intro, open positions)
+lib/
+  companies.ts       # Group companies: names, routes, logos, services (nav, footer, home, about)
+  pillars.tsx         # Service pillar content for each company page
 hooks/
   useInView.ts        # Intersection Observer hook for scroll animations
 public/
-  logo.png            # Dot-sphere logo
-  logo-with-text.jpg  # Full logo with "VertexShell Solutions" text
+  brand/              # Group and company logos (blue and white versions, trimmed)
+  (original logo exports live in design-source/logos, not served)
+  og-image.png        # Social share image
   banner.png          # Sector icons banner
   favicon.png         # Favicon (copy of logo)
   robots.txt          # Search engine directives

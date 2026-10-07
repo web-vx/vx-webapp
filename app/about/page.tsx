@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import PageHero from "@/components/PageHero";
 import AboutStory from "@/components/about/AboutStory";
+import GroupStructure from "@/components/about/GroupStructure";
 import Sectors from "@/components/about/Sectors";
 import Presence from "@/components/about/Presence";
 import Partnerships from "@/components/about/Partnerships";
@@ -11,7 +12,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "VertexShell Solutions is an industrial supply and trading group serving public sector, energy, telecom, aviation, and industrial construction clients across MENA and international markets.",
+    "VertexShell is a Cairo-based group of companies, VertexShell Advanced Solutions and VertexShell Trading Solutions, serving public sector, energy, telecom, aviation, industrial, and food and commodity clients across MENA and international markets.",
 };
 
 export default function AboutPage() {
@@ -22,9 +23,10 @@ export default function AboutPage() {
         <PageHero
           eyebrow="About Us"
           title="Building solutions that endure."
-          description="An industrial supply and trading group delivering engineered infrastructure, power, aviation, and industrial products across demanding environments."
+          description="A group of companies delivering engineered infrastructure, specialized assets, and international trading across demanding environments."
         />
         <AboutStory />
+        <GroupStructure />
         <Sectors />
         <Presence />
         <Partnerships />

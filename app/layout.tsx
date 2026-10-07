@@ -26,14 +26,18 @@ const plexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://vertexshell.com"),
   title: {
-    default: "VertexShell Solutions | Diversified Industrial Supply",
-    template: "%s | VertexShell Solutions",
+    default: "VertexShell | Engineered Supply and International Trading",
+    template: "%s | VertexShell",
   },
   description:
-    "Industrial supply and trading group delivering modular infrastructure, power systems, aviation and specialized assets, and broader industrial supply across the MENA region and international markets.",
+    "Group of companies delivering engineered infrastructure, power systems, aviation and specialized assets, and international import and export trading across the MENA region and beyond.",
   keywords: [
     "industrial supply",
-    "trading group",
+    "import and export",
+    "food and beverage trading",
+    "raw materials",
+    "equipment trading",
+    "group of companies",
     "modular infrastructure",
     "e-houses",
     "prefabricated shelters",
@@ -45,17 +49,17 @@ export const metadata: Metadata = {
     "telecom infrastructure",
   ],
   openGraph: {
-    title: "VertexShell Solutions | Diversified Industrial Supply",
+    title: "VertexShell | Engineered Supply and International Trading",
     description:
-      "Industrial supply and trading group delivering modular infrastructure, power systems, aviation and specialized assets, and broader industrial supply across the MENA region and international markets.",
+      "Group of companies delivering engineered infrastructure, power systems, aviation and specialized assets, and international import and export trading across the MENA region and beyond.",
     url: "https://vertexshell.com",
-    siteName: "VertexShell Solutions",
+    siteName: "VertexShell",
     images: [
       {
-        url: "/logo-blue-bg.jpg",
-        width: 2000,
-        height: 2000,
-        alt: "VertexShell Solutions",
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "VertexShell Group",
       },
     ],
     locale: "en_US",
@@ -63,9 +67,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "VertexShell Solutions | Diversified Industrial Supply",
+    title: "VertexShell | Engineered Supply and International Trading",
     description:
-      "Industrial supply and trading group delivering modular infrastructure, power, aviation, and specialized supply across MENA and international markets.",
+      "Engineered supply and international trading across MENA and beyond.",
   },
   robots: {
     index: true,

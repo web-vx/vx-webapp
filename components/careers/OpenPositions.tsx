@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import { useInView } from "@/hooks/useInView";
 
 const responsibilities = [
-  "Manage and grow a portfolio of client accounts across VertexShell's core sectors",
+  "Manage and grow a portfolio of client accounts across VertexShell's companies and core sectors",
   "Serve as the primary point of contact for client inquiries, quotations, and order follow-up",
   "Coordinate with international manufacturing partners and internal teams to scope requirements and prepare proposals",
   "Track tenders and RFQs relevant to assigned accounts, and prepare competitive bids",
@@ -79,7 +79,7 @@ export default function OpenPositions() {
             <div className="overflow-hidden">
               <div className="px-8 md:px-10 pb-8 md:pb-10">
                 <p className="text-secondary leading-relaxed">
-                  VertexShell Solutions is looking for an Account Manager to
+                  VertexShell is looking for an Account Manager to
                   own client relationships across our modular infrastructure,
                   power systems, aviation, and industrial supply lines. You
                   will be the primary point of contact for clients across the

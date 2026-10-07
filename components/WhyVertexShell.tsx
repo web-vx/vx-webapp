@@ -20,9 +20,9 @@ const items = [
       "From engineering and sourcing through installation, commissioning, and handover, managed by a single accountable team.",
   },
   {
-    title: "Single point of supply.",
+    title: "One group, two specialties.",
     description:
-      "One channel across infrastructure, power, aviation, and industrial supply, backed by an international manufacturing and sourcing network.",
+      "Engineered supply through Advanced Solutions and international trading through Trading Solutions, backed by one sourcing network and one accountable team.",
   },
 ];
 
