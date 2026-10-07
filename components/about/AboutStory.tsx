@@ -21,7 +21,7 @@ export default function AboutStory() {
             Our Story
           </p>
           <p className="text-secondary leading-relaxed">
-            VertexShell is a group based in Cairo. Our clients include
+            VertexShell is a group of two companies. Our clients include
             government bodies, oil &amp; gas and petrochemical operators, power
             and telecom companies, aviation operators, and industrial
             contractors, as well as food and commodity producers and buyers.

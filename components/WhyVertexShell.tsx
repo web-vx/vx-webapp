@@ -22,7 +22,7 @@ const items = [
   {
     title: "Local presence.",
     description:
-      "Our commercial and project team is based in Cairo, with sourcing relationships across Europe, Turkey, and other international markets.",
+      "Our commercial and project team is locally based, with sourcing relationships across Europe, Turkey, and other international markets.",
   },
 ];
 

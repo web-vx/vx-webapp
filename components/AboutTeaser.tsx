@@ -22,7 +22,7 @@ export default function AboutTeaser() {
               About VertexShell
             </p>
             <h2 className="font-display font-extrabold uppercase text-4xl md:text-5xl text-foreground tracking-tight max-w-2xl">
-              A Cairo-Based Group Serving Industrial and Commercial Clients
+              A Group Serving Industrial and Commercial Clients
             </h2>
             <p className="mt-6 text-secondary leading-relaxed max-w-2xl">
               Our clients include government bodies, energy and

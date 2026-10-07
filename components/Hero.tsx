@@ -17,7 +17,7 @@ export default function Hero() {
 
       <div className="relative mx-auto max-w-[1200px] px-6 pt-44 pb-14 w-full">
         <h1 className="font-display font-extrabold uppercase text-white leading-[0.95] tracking-tight text-5xl sm:text-6xl md:text-7xl lg:text-[5.25rem] max-w-4xl">
-          Industrial Supply and International Trade, Managed From Cairo
+          Industrial Supply and International Trade for Demanding Clients
         </h1>
 
         <p className="mt-6 text-lg md:text-xl text-white/70 leading-relaxed max-w-xl">
