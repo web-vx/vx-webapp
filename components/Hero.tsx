@@ -17,13 +17,14 @@ export default function Hero() {
 
       <div className="relative mx-auto max-w-[1200px] px-6 pt-44 pb-14 w-full">
         <h1 className="font-display font-extrabold uppercase text-white leading-[0.95] tracking-tight text-5xl sm:text-6xl md:text-7xl lg:text-[5.25rem] max-w-4xl">
-          One Group. Two Companies. Built for Demanding Operations.
+          Industrial Supply and International Trade, Managed From Cairo
         </h1>
 
         <p className="mt-6 text-lg md:text-xl text-white/70 leading-relaxed max-w-xl">
-          VertexShell is a group of companies delivering engineered
-          infrastructure, power systems, aviation and specialized assets, and
-          international trading across the MENA region and beyond.
+          Advanced Solutions supplies engineered infrastructure, power
+          systems, and aircraft. Trading Solutions imports and exports food,
+          raw materials, and equipment. Both manage the work from sourcing
+          through delivery.
         </p>
 
         <div className="mt-10 flex flex-wrap gap-4">
@@ -31,7 +32,7 @@ export default function Hero() {
             href="/contact"
             className="inline-flex items-center px-8 py-4 bg-primary text-white text-sm font-bold uppercase tracking-wider hover:bg-accent transition-colors"
           >
-            Get in touch
+            Contact us
           </Link>
           <Link
             href="/#companies"

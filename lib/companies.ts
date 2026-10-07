@@ -17,9 +17,9 @@ export const companies: Company[] = [
     slug: "advanced-solutions",
     name: "VertexShell Advanced Solutions",
     href: "/advanced-solutions",
-    tagline: "Engineered infrastructure, power, and specialized assets.",
+    tagline: "Engineered infrastructure, power, and aircraft",
     description:
-      "Sources, engineers, and delivers factory-built infrastructure, power systems, aircraft, and industrial products for demanding environments.",
+      "Prefabricated infrastructure, power generation, aircraft, and industrial products, sourced from established manufacturers and delivered to site.",
     services: [
       "Aviation & Specialized Assets",
       "Modular Infrastructure",
@@ -35,9 +35,9 @@ export const companies: Company[] = [
     slug: "trading-solutions",
     name: "VertexShell Trading Solutions",
     href: "/trading-solutions",
-    tagline: "Import and export of goods that keep businesses running.",
+    tagline: "Import and export of food, materials, and equipment",
     description:
-      "Sources, trades, and moves food and beverage products, raw materials, and equipment between markets across MENA and beyond.",
+      "Imports and exports of food and beverage products, raw materials, and equipment, with sourcing, documentation, and shipping handled by one team.",
     services: ["Food & Beverage", "Raw Materials", "Equipment"],
     logo: "/brand/trading-solutions.png",
     logoWhite: "/brand/trading-solutions-white.png",

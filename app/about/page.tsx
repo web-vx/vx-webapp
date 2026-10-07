@@ -22,8 +22,8 @@ export default function AboutPage() {
       <main>
         <PageHero
           eyebrow="About Us"
-          title="Building solutions that endure."
-          description="A group of companies delivering engineered infrastructure, specialized assets, and international trading across demanding environments."
+          title="A Cairo-based group serving industrial and commercial clients."
+          description="VertexShell supplies engineered infrastructure and specialized assets, and trades food, raw materials, and equipment, for clients across MENA and international markets."
         />
         <AboutStory />
         <GroupStructure />
@@ -31,8 +31,8 @@ export default function AboutPage() {
         <Presence />
         <Partnerships />
         <CtaBanner
-          title="Want to work with us?"
-          description="Reach out and our team will get back to you."
+          title="Work with VertexShell."
+          description="Contact us and our team will reply."
         />
       </main>
       <Footer />

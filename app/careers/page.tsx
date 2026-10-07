@@ -17,8 +17,8 @@ export default function CareersPage() {
       <main>
         <PageHero
           eyebrow="Careers"
-          title="Build your career at VertexShell."
-          description="We're a small, growing team working across some of the most demanding industrial sectors in the region. Here's what's open right now."
+          title="Work at VertexShell."
+          description="We are a small team working across industrial and commercial sectors in the region. Current openings are listed below."
           photoSrc="/images/office-background.jpg"
           photoLabel="Modern open-plan office at dusk"
         />

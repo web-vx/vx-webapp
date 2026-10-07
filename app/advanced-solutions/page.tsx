@@ -21,8 +21,8 @@ export default function AdvancedSolutionsPage() {
           logoSrc="/brand/advanced-solutions-white.png"
           logoAlt="VertexShell Advanced Solutions"
           eyebrow="A VertexShell Company"
-          title="A single point of supply for complex operations."
-          description="Our model combines engineered products with a broad international sourcing and acquisition network. Whatever the requirement, we source it, engineer it, and deliver it."
+          title="Engineered infrastructure, power, and aviation assets."
+          description="Advanced Solutions supplies prefabricated infrastructure, power generation, aircraft, and industrial products. We source from established manufacturers, manage testing and delivery, and support installation and handover."
         />
         <PillarList pillars={advancedPillars} />
         <CtaBanner

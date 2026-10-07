@@ -22,7 +22,7 @@ export default function GroupStructure() {
           Group Structure
         </p>
         <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight max-w-2xl">
-          One group, two companies.
+          How the group is organized.
         </h2>
 
         <div className="mt-12 flex flex-col items-center">

@@ -5,24 +5,24 @@ import { useInView } from "@/hooks/useInView";
 
 const items = [
   {
-    title: "International standards.",
+    title: "Tested to standard.",
     description:
-      "Products built to international military and industrial standards, with full factory and site acceptance testing and customer witness.",
+      "Advanced Solutions products are built to international military and industrial standards, with factory and site acceptance testing that customers can witness.",
   },
   {
-    title: "Defense-grade pedigree.",
+    title: "Established manufacturers.",
     description:
-      "Manufacturing partnerships with a heritage in harsh-environment and defense-grade programs worldwide.",
+      "We source from manufacturers with long records in harsh-environment and defense-grade programs.",
   },
   {
-    title: "End-to-end delivery.",
+    title: "One accountable team.",
     description:
-      "From engineering and sourcing through installation, commissioning, and handover, managed by a single accountable team.",
+      "A single team manages sourcing, engineering, shipping, installation, and handover, so you have one contact for the whole project.",
   },
   {
-    title: "One group, two specialties.",
+    title: "Local presence.",
     description:
-      "Engineered supply through Advanced Solutions and international trading through Trading Solutions, backed by one sourcing network and one accountable team.",
+      "Our commercial and project team is based in Cairo, with sourcing relationships across Europe, Turkey, and other international markets.",
   },
 ];
 
@@ -42,7 +42,7 @@ export default function WhyVertexShell() {
           Why VertexShell
         </p>
         <h2 className="font-display font-extrabold uppercase text-4xl md:text-5xl text-foreground tracking-tight max-w-2xl">
-          Engineering Pedigree, Global Sourcing, Local Execution
+          What You Can Expect From Us
         </h2>
 
         <div className="mt-14 border-t border-foreground/10">

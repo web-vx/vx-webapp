@@ -106,7 +106,7 @@ export const tradingPillars: Pillar[] = [
   {
     title: "Food & Beverage",
     description:
-      "Import and export of packaged food and beverage products between producers and buyers across MENA and international markets. Sourcing, documentation, and delivery handled through a single accountable team.",
+      "Import and export of packaged food and beverage products between producers and buyers across MENA and international markets. Sourcing, documentation, and delivery are handled by one team.",
     bullets: [
       "Import and export of packaged food and beverage products",
       "Producer and buyer matching across regional and international markets",
@@ -125,7 +125,7 @@ export const tradingPillars: Pillar[] = [
   {
     title: "Raw Materials",
     description:
-      "Trading of industrial and commercial raw materials for manufacturers, contractors, and processors. We identify reliable origins, agree terms, and move material to site.",
+      "Trading of industrial and commercial raw materials for manufacturers, contractors, and processors. We identify suppliers, agree terms, and arrange delivery to site.",
     bullets: [
       "Sourcing of industrial and commercial raw materials",
       "Supplier identification and commercial negotiation",
@@ -144,7 +144,7 @@ export const tradingPillars: Pillar[] = [
   {
     title: "Equipment",
     description:
-      "Import and export of industrial and commercial equipment, new and used, for operators and contractors who need dependable supply and clean paperwork.",
+      "Import and export of industrial and commercial equipment, new and used, for operators and contractors, with inspection, documentation, and shipping coordinated by one team.",
     bullets: [
       "Industrial and commercial equipment sourcing",
       "New and used equipment, inspected and documented",

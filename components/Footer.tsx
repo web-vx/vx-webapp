@@ -21,8 +21,7 @@ export default function Footer() {
             className="h-12 w-auto mb-4 -ml-1"
           />
           <p className="text-white/50 text-sm leading-relaxed max-w-[240px]">
-            A group of companies delivering engineered supply and international
-            trading across MENA and beyond.
+            Engineered supply and international trading, based in Cairo, Egypt.
           </p>
         </div>
 

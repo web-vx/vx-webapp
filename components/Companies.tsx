@@ -22,12 +22,13 @@ export default function Companies() {
           Our Companies
         </p>
         <h2 className="font-display font-extrabold uppercase text-4xl md:text-5xl text-foreground tracking-tight max-w-2xl">
-          Two Companies, One Standard of Delivery
+          What Each Company Does
         </h2>
         <p className="mt-4 text-secondary max-w-2xl">
-          VertexShell brings together engineered supply and international
-          trading under one group. Each company has its own focus, and both
-          share the same sourcing network and accountability.
+          Advanced Solutions handles engineered products and specialized
+          assets. Trading Solutions handles the import and export of
+          commercial goods. Both use the same sourcing network and project
+          team.
         </p>
 
         <div className="mt-14 grid lg:grid-cols-2 gap-6">

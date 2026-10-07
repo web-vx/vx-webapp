@@ -37,7 +37,7 @@ export default function Presence() {
           Our Presence
         </p>
         <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight max-w-2xl">
-          Local execution, global reach.
+          Where we operate.
         </h2>
 
         <div className="mt-12 grid md:grid-cols-3 gap-8">

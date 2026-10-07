@@ -7,7 +7,7 @@ const steps = [
   {
     title: "Source",
     description:
-      "We identify and qualify suppliers or buyers for your requirement across our regional and international network.",
+      "We identify and qualify suppliers or buyers for your requirement.",
   },
   {
     title: "Agree",
@@ -17,12 +17,12 @@ const steps = [
   {
     title: "Ship",
     description:
-      "Shipping, customs, and inspection are coordinated by one team, with documentation in order from origin to destination.",
+      "Shipping, customs clearance, and inspection are coordinated by one team, with documentation prepared before the goods move.",
   },
   {
     title: "Deliver",
     description:
-      "Goods are handed over on the agreed terms, with support after delivery if anything needs resolving.",
+      "Goods are handed over on the agreed terms, and we follow up on any issue after delivery.",
   },
 ];
 
@@ -42,7 +42,7 @@ export default function Process() {
           How We Work
         </p>
         <h2 className="font-display font-extrabold uppercase text-4xl md:text-5xl text-white tracking-tight max-w-2xl">
-          From Origin to Delivery, One Accountable Team
+          How a Trade Is Run
         </h2>
 
         <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/10">

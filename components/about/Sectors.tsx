@@ -31,7 +31,7 @@ export default function Sectors() {
           Sectors We Serve
         </p>
         <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight max-w-2xl">
-          Diverse sectors, one accountable partner.
+          The sectors we work in.
         </h2>
 
         <div className="mt-10 flex flex-wrap gap-3">

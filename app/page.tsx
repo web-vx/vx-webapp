@@ -16,8 +16,8 @@ export default function Home() {
         <Companies />
         <WhyVertexShell />
         <CtaBanner
-          title="Let's talk about your next project."
-          description="Tell us what you need sourced, engineered, or delivered, and our team will get back to you."
+          title="Send us your requirement."
+          description="Describe what you need sourced, supplied, or shipped and our team will reply."
         />
       </main>
       <Footer />

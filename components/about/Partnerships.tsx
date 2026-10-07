@@ -26,7 +26,7 @@ export default function Partnerships() {
             Advanced Solutions · Manufacturing Partnerships
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">
-            A network built on engineering pedigree.
+            Manufacturers with a record in demanding environments.
           </h2>
           <p className="text-secondary leading-relaxed">
             We work with leading European and international manufacturers,

@@ -21,18 +21,17 @@ export default function AboutStory() {
             Our Story
           </p>
           <p className="text-secondary leading-relaxed">
-            VertexShell is a group of companies based in Cairo, serving the
-            public sector, oil &amp; gas, petrochemical, power generation,
-            telecommunications, aviation, industrial construction, and food and
-            commodity markets across the MENA region and international markets.
+            VertexShell is a group based in Cairo. Our clients include
+            government bodies, oil &amp; gas and petrochemical operators, power
+            and telecom companies, aviation operators, and industrial
+            contractors, as well as food and commodity producers and buyers.
           </p>
           <p className="text-secondary leading-relaxed">
-            Advanced Solutions sources, engineers, and delivers factory-built
-            infrastructure, specialized assets, and industrial products for
-            demanding environments. Trading Solutions imports and exports food
-            and beverage products, raw materials, and equipment. Both draw on
-            the same international sourcing network and are delivered by a
-            locally-based commercial and project team.
+            Advanced Solutions sources and supplies factory-built
+            infrastructure, power systems, aircraft, and industrial products.
+            Trading Solutions imports and exports food and beverage products,
+            raw materials, and equipment. The two companies share a sourcing
+            network and a locally based commercial and project team.
           </p>
         </div>
         <MediaPanel
