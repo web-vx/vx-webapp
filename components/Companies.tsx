@@ -22,7 +22,7 @@ export default function Companies() {
           Our Companies
         </p>
         <h2 className="font-display font-extrabold uppercase text-4xl md:text-5xl text-foreground tracking-tight max-w-2xl">
-          What Each Company Does
+          What We Do
         </h2>
         <p className="mt-4 text-secondary max-w-2xl">
           Advanced Solutions handles engineered products and specialized
