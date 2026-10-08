@@ -30,7 +30,7 @@ export default function GroupStructure() {
             <Image
               src="/brand/group.png"
               alt="VertexShell Group"
-              width={1789}
+              width={1887}
               height={132}
               className="w-56 max-w-full h-auto"
             />

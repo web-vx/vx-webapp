@@ -16,7 +16,7 @@ export default function Footer() {
           <Image
             src="/brand/group-white.png"
             alt="VertexShell Group"
-            width={1789}
+            width={1887}
             height={132}
             className="w-52 h-auto mb-5"
           />
