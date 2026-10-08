@@ -23,8 +23,8 @@ export default function AdvancedSolutionsPage() {
           logoWidth={1581}
           logoHeight={370}
           eyebrow="A VertexShell Company"
-          title="Engineered infrastructure, power, and aviation assets."
-          description="Advanced Solutions supplies aircraft, prefabricated infrastructure, and power and industrial equipment. We source from established manufacturers, manage testing and delivery, and support installation and handover."
+          title="Aviation, infrastructure, and power equipment."
+          description="Advanced Solutions provides aviation services, prefabricated infrastructure, and power and industrial equipment. We work with established manufacturers and specialist partners, manage testing and delivery, and support installation and handover."
         />
         <PillarList pillars={advancedPillars} />
         <CtaBanner

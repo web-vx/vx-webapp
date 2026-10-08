@@ -12,11 +12,11 @@ export const advancedPillars: Pillar[] = [
   {
     title: "Aviation & Specialized Assets",
     description:
-      "Sourcing, acquisition, and disposal of aircraft and specialized assets.",
+      "Aircraft sourcing and disposal for government and commercial operators, with airfield inspection and aerial mapping delivered through specialist partners.",
     bullets: [
-      "Fixed-wing and rotary aircraft",
-      "Specialized assets for government and commercial operators",
-      "Discreet, documentation-led transactions from identification through transfer",
+      "Sourcing and disposal of fixed-wing and rotary aircraft and specialized assets",
+      "Inspection of instrument landing systems (ILS CAT I-III) and similar navigation aids, through partners",
+      "Aerial mapping, through partners",
     ],
     photoSrc: "/images/aviation-fleet.png",
     photoLabel: "C-130 Hercules and CH-47 Chinook in flight",

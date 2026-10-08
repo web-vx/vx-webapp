@@ -22,7 +22,7 @@ export default function Hero() {
 
         <p className="mt-6 text-lg md:text-xl text-white/70 leading-relaxed max-w-xl">
           VertexShell is a group of two companies. Advanced Solutions
-          supplies aircraft, modular infrastructure, and power and industrial
+          supplies aviation services, modular infrastructure, and power and industrial
           equipment. Trading &amp; Distribution imports, exports, and distributes
           food and beverage products and raw materials.
         </p>

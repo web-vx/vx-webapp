@@ -27,9 +27,8 @@ export default function AboutStory() {
             contractors, as well as food and commodity producers and buyers.
           </p>
           <p className="text-secondary leading-relaxed">
-            Advanced Solutions sources and supplies factory-built
-            aircraft, modular infrastructure, and power and industrial
-            equipment.
+            Advanced Solutions provides aviation services, modular infrastructure, and power and
+            industrial equipment.
             Trading &amp; Distribution imports, exports, and distributes food and
             beverage products and raw materials. The two companies share a sourcing network
             and a locally based commercial and project team.

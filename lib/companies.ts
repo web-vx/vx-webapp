@@ -21,9 +21,9 @@ export const companies: Company[] = [
     slug: "advanced-solutions",
     name: "VertexShell Advanced Solutions",
     href: "/advanced-solutions",
-    tagline: "Engineered infrastructure, power, and aircraft",
+    tagline: "Aviation, infrastructure, and power equipment",
     description:
-      "Aircraft, prefabricated infrastructure, and power and industrial equipment, sourced from established manufacturers and delivered to site.",
+      "Aviation services, prefabricated infrastructure, and power and industrial equipment, delivered through established manufacturers and specialist partners.",
     services: [
       "Aviation & Specialized Assets",
       "Modular Infrastructure",
