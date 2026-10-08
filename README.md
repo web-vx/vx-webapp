@@ -1,6 +1,6 @@
 # VertexShell Website
 
-Marketing website for VertexShell, a Cairo-based group of companies: VertexShell Advanced Solutions (aviation and specialized assets, modular infrastructure, power systems, industrial supply) and VertexShell Trading & Distribution (import and export of food and beverage, raw materials, and equipment).
+Marketing website for VertexShell, a Cairo-based group of companies: VertexShell Advanced Solutions (aviation and specialized assets, modular infrastructure, power systems, industrial supply) and VertexShell Trading & Distribution (import and export of food and beverage and raw materials).
 
 ## Tech Stack
 

@@ -36,7 +36,6 @@ export const metadata: Metadata = {
     "import and export",
     "food and beverage trading",
     "raw materials",
-    "equipment trading",
     "group of companies",
     "modular infrastructure",
     "e-houses",

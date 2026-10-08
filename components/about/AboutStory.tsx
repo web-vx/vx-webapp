@@ -30,8 +30,8 @@ export default function AboutStory() {
             Advanced Solutions sources and supplies factory-built
             infrastructure, power systems, aircraft, and industrial products.
             Trading &amp; Distribution imports, exports, and distributes food and
-            beverage products, raw materials, and equipment. The two companies share a sourcing
-            network and a locally based commercial and project team.
+            beverage products and raw materials. The two companies share a sourcing network
+            and a locally based commercial and project team.
           </p>
         </div>
         <MediaPanel

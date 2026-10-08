@@ -27,7 +27,7 @@ export default function AboutTeaser() {
             <p className="mt-6 text-secondary leading-relaxed max-w-2xl">
               VertexShell supplies engineered infrastructure, power
               systems, aircraft, and industrial products, and trades food and
-              beverage products, raw materials, and equipment. We work with
+              beverage products and raw materials. We work with
               government bodies, energy and petrochemical operators, telecom
               companies, aviation operators, industrial contractors, and food
               and commodity buyers across MENA and international markets.

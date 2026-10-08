@@ -141,25 +141,4 @@ export const tradingPillars: Pillar[] = [
       </svg>
     ),
   },
-  {
-    title: "Equipment",
-    description:
-      "Import and export of industrial and commercial equipment, new and used, for operators and contractors, with inspection, documentation, and shipping coordinated by one team.",
-    bullets: [
-      "Industrial and commercial equipment sourcing",
-      "New and used equipment, inspected and documented",
-      "Export support for equipment leaving the region",
-      "Shipping, customs, and handover coordinated end to end",
-    ],
-    photoLabel: "Containerized equipment shipment, photo needed",
-    icon: (
-      <svg {...iconProps}>
-        <circle cx="24" cy="24" r="7" />
-        <path
-          d="M24 5v6M24 37v6M5 24h6M37 24h6M10.6 10.6l4.2 4.2M33.2 33.2l4.2 4.2M10.6 37.4l4.2-4.2M33.2 14.8l4.2-4.2"
-          strokeLinecap="round"
-        />
-      </svg>
-    ),
-  },
 ];

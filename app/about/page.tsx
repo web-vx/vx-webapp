@@ -23,7 +23,7 @@ export default function AboutPage() {
         <PageHero
           eyebrow="About Us"
           title="Supplying industry and trade across MENA."
-          description="VertexShell supplies engineered infrastructure and specialized assets, and trades food, raw materials, and equipment, for customers across MENA and international markets."
+          description="VertexShell supplies engineered infrastructure and specialized assets, and trades food and raw materials, for customers across MENA and international markets."
         />
         <AboutStory />
         <GroupStructure />

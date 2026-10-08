@@ -43,10 +43,10 @@ export const companies: Company[] = [
     slug: "trading-distribution",
     name: "VertexShell Trading & Distribution",
     href: "/trading-distribution",
-    tagline: "Import, export, and distribution of food, materials, and equipment",
+    tagline: "Import, export, and distribution of food and raw materials",
     description:
-      "Imports, exports, and distributes food and beverage products, raw materials, and equipment, with sourcing, documentation, and shipping handled by one team.",
-    services: ["Food & Beverage", "Raw Materials", "Equipment"],
+      "Imports, exports, and distributes food and beverage products and raw materials, with sourcing, documentation, and shipping handled by one team.",
+    services: ["Food & Beverage", "Raw Materials"],
     logo: "/brand/trading-distribution.png",
     logoWidth: 1521,
     logoHeight: 373,

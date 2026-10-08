@@ -10,7 +10,7 @@ import { tradingPillars } from "@/lib/pillars";
 export const metadata: Metadata = {
   title: "Trading & Distribution",
   description:
-    "VertexShell Trading & Distribution imports, exports, and distributes food and beverage products, raw materials, and equipment across MENA and international markets.",
+    "VertexShell Trading & Distribution imports, exports, and distributes food and beverage products and raw materials across MENA and international markets.",
 };
 
 export default function TradingDistributionPage() {
@@ -24,7 +24,7 @@ export default function TradingDistributionPage() {
           logoWidth={1521}
           logoHeight={373}
           eyebrow="A VertexShell Company"
-          title="Import, export, and distribution of food, raw materials, and equipment."
+          title="Import, export, and distribution of food and raw materials."
           description="Trading &amp; Distribution connects producers and buyers across MENA and international markets. One team manages sourcing, documentation, and shipping."
         />
         <PillarList pillars={tradingPillars} />
