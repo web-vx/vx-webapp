@@ -5,7 +5,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/about",
     "/advanced-solutions",
-    "/trading-solutions",
+    "/trading-distribution",
     "/careers",
     "/contact",
   ];

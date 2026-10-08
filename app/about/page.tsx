@@ -12,7 +12,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "VertexShell is a group of companies, VertexShell Advanced Solutions and VertexShell Trading Solutions, serving public sector, energy, telecom, aviation, industrial, and food and commodity customers across MENA and international markets.",
+    "VertexShell is a group of companies, VertexShell Advanced Solutions and VertexShell Trading & Distribution, serving public sector, energy, telecom, aviation, industrial, and food and commodity customers across MENA and international markets.",
 };
 
 export default function AboutPage() {

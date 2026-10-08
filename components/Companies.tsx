@@ -45,8 +45,8 @@ export default function Companies() {
                 <Image
                   src={company.symbolWhite}
                   alt=""
-                  width={1074}
-                  height={1202}
+                  width={company.symbolWidth}
+                  height={company.symbolHeight}
                   className="absolute -right-16 -top-10 w-80 h-auto opacity-10 transition-transform duration-700 group-hover:scale-105"
                 />
               )}
@@ -59,8 +59,8 @@ export default function Companies() {
                 <Image
                   src={company.logoWhite}
                   alt={company.name}
-                  width={1617}
-                  height={406}
+                  width={company.logoWidth}
+                  height={company.logoHeight}
                   className="h-12 w-auto mb-6"
                 />
                 <h3 className="font-display font-bold uppercase text-2xl text-white tracking-tight">

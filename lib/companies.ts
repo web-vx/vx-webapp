@@ -6,8 +6,12 @@ export interface Company {
   description: string;
   services: string[];
   logo: string;
+  logoWidth: number;
+  logoHeight: number;
   logoWhite: string;
   symbolWhite: string;
+  symbolWidth: number;
+  symbolHeight: number;
   image?: string;
   imagePosition?: string;
 }
@@ -27,20 +31,28 @@ export const companies: Company[] = [
       "Industrial Supply",
     ],
     logo: "/brand/advanced-solutions.png",
+    logoWidth: 1581,
+    logoHeight: 370,
     logoWhite: "/brand/advanced-solutions-white.png",
     symbolWhite: "/brand/advanced-symbol-white.png",
+    symbolWidth: 1332,
+    symbolHeight: 1185,
     image: "/images/modular-e-house.png",
   },
   {
-    slug: "trading-solutions",
-    name: "VertexShell Trading Solutions",
-    href: "/trading-solutions",
-    tagline: "Import and export of food, materials, and equipment",
+    slug: "trading-distribution",
+    name: "VertexShell Trading & Distribution",
+    href: "/trading-distribution",
+    tagline: "Import, export, and distribution of food, materials, and equipment",
     description:
-      "Imports and exports of food and beverage products, raw materials, and equipment, with sourcing, documentation, and shipping handled by one team.",
+      "Imports, exports, and distributes food and beverage products, raw materials, and equipment, with sourcing, documentation, and shipping handled by one team.",
     services: ["Food & Beverage", "Raw Materials", "Equipment"],
-    logo: "/brand/trading-solutions.png",
-    logoWhite: "/brand/trading-solutions-white.png",
+    logo: "/brand/trading-distribution.png",
+    logoWidth: 1521,
+    logoHeight: 373,
+    logoWhite: "/brand/trading-distribution-white.png",
     symbolWhite: "/brand/trading-symbol-white.png",
+    symbolWidth: 1120,
+    symbolHeight: 1248,
   },
 ];

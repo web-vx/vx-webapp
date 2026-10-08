@@ -1,6 +1,6 @@
 # VertexShell Website
 
-Marketing website for VertexShell, a Cairo-based group of companies: VertexShell Advanced Solutions (aviation and specialized assets, modular infrastructure, power systems, industrial supply) and VertexShell Trading Solutions (import and export of food and beverage, raw materials, and equipment).
+Marketing website for VertexShell, a Cairo-based group of companies: VertexShell Advanced Solutions (aviation and specialized assets, modular infrastructure, power systems, industrial supply) and VertexShell Trading & Distribution (import and export of food and beverage, raw materials, and equipment).
 
 ## Tech Stack
 
@@ -32,7 +32,7 @@ app/
   page.tsx            # Home page (hero, teasers, CTA)
   about/page.tsx       # About Us page
   advanced-solutions/page.tsx  # Advanced Solutions company page (was /services, which redirects here)
-  trading-solutions/page.tsx   # Trading Solutions company page
+  trading-distribution/page.tsx   # Trading & Distribution company page
   careers/page.tsx     # Careers page (open positions)
   contact/page.tsx     # Contact page
   globals.css         # Tailwind imports, custom theme, animations
@@ -51,7 +51,7 @@ components/
   MediaPanel.tsx      # Placeholder panel for photos not yet available
   Footer.tsx          # Footer with quick links, contact info, copyright
   about/              # About page sections (story, group structure, sectors, presence, partnerships)
-  trading/            # Trading Solutions page sections
+  trading/            # Trading & Distribution page sections
   careers/            # Careers page sections (intro, open positions)
 lib/
   companies.ts       # Group companies: names, routes, logos, services (nav, footer, home, about)

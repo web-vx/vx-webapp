@@ -8,29 +8,31 @@ import Footer from "@/components/Footer";
 import { tradingPillars } from "@/lib/pillars";
 
 export const metadata: Metadata = {
-  title: "Trading Solutions",
+  title: "Trading & Distribution",
   description:
-    "VertexShell Trading Solutions imports and exports food and beverage products, raw materials, and equipment across MENA and international markets.",
+    "VertexShell Trading & Distribution imports, exports, and distributes food and beverage products, raw materials, and equipment across MENA and international markets.",
 };
 
-export default function TradingSolutionsPage() {
+export default function TradingDistributionPage() {
   return (
     <>
       <Nav />
       <main>
         <PageHero
-          logoSrc="/brand/trading-solutions-white.png"
-          logoAlt="VertexShell Trading Solutions"
+          logoSrc="/brand/trading-distribution-white.png"
+          logoAlt="VertexShell Trading & Distribution"
+          logoWidth={1521}
+          logoHeight={373}
           eyebrow="A VertexShell Company"
-          title="Import and export of food, raw materials, and equipment."
-          description="Trading Solutions connects producers and buyers across MENA and international markets. One team manages sourcing, documentation, and shipping."
+          title="Import, export, and distribution of food, raw materials, and equipment."
+          description="Trading &amp; Distribution connects producers and buyers across MENA and international markets. One team manages sourcing, documentation, and shipping."
         />
         <PillarList pillars={tradingPillars} />
         <Process />
         <CtaBanner
           title="Need to import or export?"
           description="Tell us what you are buying or selling and our team will get back to you."
-          ctaHref="/contact?enquiry=trading-solutions"
+          ctaHref="/contact?enquiry=trading-distribution"
         />
       </main>
       <Footer />

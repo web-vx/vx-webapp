@@ -23,8 +23,8 @@ export default function Hero() {
         <p className="mt-6 text-lg md:text-xl text-white/70 leading-relaxed max-w-xl">
           VertexShell is a group of two companies. Advanced Solutions
           supplies infrastructure, power systems, aircraft, and industrial
-          products. Trading Solutions imports and exports food and beverage
-          products, raw materials, and equipment.
+          products. Trading &amp; Distribution imports, exports, and distributes
+          food and beverage products, raw materials, and equipment.
         </p>
 
         <div className="mt-10 flex flex-wrap gap-4">

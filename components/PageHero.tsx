@@ -9,6 +9,8 @@ interface PageHeroProps {
   photoSrc?: string;
   logoSrc?: string;
   logoAlt?: string;
+  logoWidth?: number;
+  logoHeight?: number;
 }
 
 export default function PageHero({
@@ -19,6 +21,8 @@ export default function PageHero({
   photoSrc,
   logoSrc,
   logoAlt = "",
+  logoWidth = 1581,
+  logoHeight = 370,
 }: PageHeroProps) {
   return (
     <section className="relative bg-navy overflow-hidden pt-32 pb-16 md:pt-40 md:pb-20">
@@ -32,8 +36,8 @@ export default function PageHero({
           <Image
             src={logoSrc}
             alt={logoAlt}
-            width={1617}
-            height={406}
+            width={logoWidth}
+            height={logoHeight}
             className="h-12 md:h-16 w-auto mb-8 animate-fade-in-up"
           />
         )}

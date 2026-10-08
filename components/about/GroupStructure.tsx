@@ -47,8 +47,8 @@ export default function GroupStructure() {
                 <Image
                   src={company.logo}
                   alt={company.name}
-                  width={1617}
-                  height={406}
+                  width={company.logoWidth}
+                  height={company.logoHeight}
                   className="h-10 w-auto"
                 />
                 <p className="mt-4 text-sm text-secondary leading-relaxed">

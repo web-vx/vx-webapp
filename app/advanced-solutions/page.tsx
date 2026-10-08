@@ -20,6 +20,8 @@ export default function AdvancedSolutionsPage() {
         <PageHero
           logoSrc="/brand/advanced-solutions-white.png"
           logoAlt="VertexShell Advanced Solutions"
+          logoWidth={1581}
+          logoHeight={370}
           eyebrow="A VertexShell Company"
           title="Engineered infrastructure, power, and aviation assets."
           description="Advanced Solutions supplies prefabricated infrastructure, power generation, aircraft, and industrial products. We source from established manufacturers, manage testing and delivery, and support installation and handover."
