@@ -22,14 +22,15 @@ export default function AboutTeaser() {
               About VertexShell
             </p>
             <h2 className="font-display font-extrabold uppercase text-4xl md:text-5xl text-foreground tracking-tight max-w-2xl">
-              A Group Serving Industrial and Commercial Clients
+              Supplying Industry and Trade Across MENA
             </h2>
             <p className="mt-6 text-secondary leading-relaxed max-w-2xl">
-              Our clients include government bodies, energy and
-              petrochemical operators, telecom companies, aviation operators,
-              industrial contractors, and food and commodity buyers across
-              MENA and international markets. A locally based team manages
-              each project and shipment.
+              VertexShell supplies engineered infrastructure, power
+              systems, aircraft, and industrial products, and trades food and
+              beverage products, raw materials, and equipment. We work with
+              government bodies, energy and petrochemical operators, telecom
+              companies, aviation operators, industrial contractors, and food
+              and commodity buyers across MENA and international markets.
             </p>
           </div>
           <Link

@@ -4,14 +4,14 @@ import { useRef, useState } from "react";
 import { useInView } from "@/hooks/useInView";
 
 const responsibilities = [
-  "Manage and grow a portfolio of client accounts across VertexShell's companies and core sectors",
-  "Serve as the primary point of contact for client inquiries, quotations, and order follow-up",
+  "Manage and grow a portfolio of customer accounts across VertexShell's companies and core sectors",
+  "Serve as the primary point of contact for customer inquiries, quotations, and order follow-up",
   "Coordinate with international manufacturing partners and internal teams to scope requirements and prepare proposals",
   "Track tenders and RFQs relevant to assigned accounts, and prepare competitive bids",
   "Maintain accurate account records and pipeline forecasts",
   "Build long-term relationships with key decision-makers to identify repeat and expansion opportunities",
   "Coordinate handover to project and delivery teams, and stay engaged through installation and commissioning",
-  "Represent VertexShell at client meetings, site visits, and industry events across the MENA region",
+  "Represent VertexShell at customer meetings, site visits, and industry events across the MENA region",
 ];
 
 const requirements = [
@@ -80,9 +80,9 @@ export default function OpenPositions() {
               <div className="px-8 md:px-10 pb-8 md:pb-10">
                 <p className="text-secondary leading-relaxed">
                   VertexShell is looking for an Account Manager to
-                  own client relationships across our modular infrastructure,
+                  own customer relationships across our modular infrastructure,
                   power systems, aviation, and industrial supply lines. You
-                  will be the primary point of contact for clients across the
+                  will be the primary point of contact for customers across the
                   public sector, energy, telecom, and industrial construction
                   sectors, managing accounts from initial inquiry through
                   delivery and after-sales support.

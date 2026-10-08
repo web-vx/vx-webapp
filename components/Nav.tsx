@@ -38,7 +38,7 @@ export default function Nav() {
             alt="VertexShell Group"
             width={1887}
             height={132}
-            className="w-44 sm:w-48 lg:w-52 h-auto"
+            className="w-56 sm:w-60 lg:w-64 h-auto"
             priority
           />
         </Link>
