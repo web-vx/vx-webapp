@@ -24,12 +24,6 @@ export default function Companies() {
         <h2 className="font-display font-extrabold uppercase text-4xl md:text-5xl text-foreground tracking-tight max-w-2xl">
           What We Do
         </h2>
-        <p className="mt-4 text-secondary max-w-2xl">
-          Advanced Solutions handles engineered products and specialized
-          assets. Trading Solutions handles the import and export of
-          commercial goods. Both use the same sourcing network and project
-          team.
-        </p>
 
         <div className="mt-14 grid lg:grid-cols-2 gap-6">
           {companies.map((company, i) => (
