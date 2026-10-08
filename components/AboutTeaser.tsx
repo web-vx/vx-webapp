@@ -25,8 +25,8 @@ export default function AboutTeaser() {
               Supplying Industry and Trade Across MENA
             </h2>
             <p className="mt-6 text-secondary leading-relaxed max-w-2xl">
-              VertexShell supplies engineered infrastructure, power
-              systems, aircraft, and industrial products, and trades food and
+              VertexShell supplies aircraft, modular infrastructure, and power and industrial
+              equipment, and trades food and
               beverage products and raw materials. We work with
               government bodies, energy and petrochemical operators, telecom
               companies, aviation operators, industrial contractors, and food

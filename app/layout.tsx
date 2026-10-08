@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     template: "%s | VertexShell",
   },
   description:
-    "Group of companies delivering engineered infrastructure, power systems, aviation and specialized assets, and international import and export trading across the MENA region and beyond.",
+    "Group of companies delivering aviation and specialized assets, modular infrastructure, power and industrial equipment, and international import and export trading across the MENA region and beyond.",
   keywords: [
     "industrial supply",
     "import and export",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "VertexShell | Engineered Supply and International Trading",
     description:
-      "Group of companies delivering engineered infrastructure, power systems, aviation and specialized assets, and international import and export trading across the MENA region and beyond.",
+      "Group of companies delivering aviation and specialized assets, modular infrastructure, power and industrial equipment, and international import and export trading across the MENA region and beyond.",
     url: "https://vertexshell.com",
     siteName: "VertexShell",
     images: [

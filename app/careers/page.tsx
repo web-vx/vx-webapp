@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Careers",
   description:
-    "Join VertexShell and build a career across engineered infrastructure, power systems, aviation, industrial supply, and international trading.",
+    "Join VertexShell and build a career across engineered infrastructure, power and industrial equipment, aviation, and international trading.",
 };
 
 export default function CareersPage() {

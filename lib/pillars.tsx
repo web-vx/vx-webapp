@@ -12,12 +12,11 @@ export const advancedPillars: Pillar[] = [
   {
     title: "Aviation & Specialized Assets",
     description:
-      "Sourcing, acquisition, and disposal of fixed-wing and rotary aircraft and specialized assets for government and commercial operators. Discreet, documentation-led transactions managed end to end.",
+      "Sourcing, acquisition, and disposal of aircraft and specialized assets.",
     bullets: [
-      "Fixed-wing and rotary aircraft sourcing, acquisition, and disposal",
-      "Support for government and commercial operators",
-      "Discreet, documentation-led transaction management",
-      "End-to-end handling from identification through transfer",
+      "Fixed-wing and rotary aircraft",
+      "Specialized assets for government and commercial operators",
+      "Discreet, documentation-led transactions from identification through transfer",
     ],
     photoSrc: "/images/aviation-fleet.png",
     photoLabel: "C-130 Hercules and CH-47 Chinook in flight",
@@ -35,12 +34,11 @@ export const advancedPillars: Pillar[] = [
   {
     title: "Modular Infrastructure",
     description:
-      "Prefabricated e-houses, control shelters, modular buildings, and mobile workshops for harsh-environment and remote-site deployment. Factory-built, fully integrated, and engineered for rapid installation.",
+      "Factory-built shelters and buildings for harsh-environment and remote sites, delivered fully integrated for rapid installation.",
     bullets: [
       "Prefabricated e-houses and control shelters",
-      "Modular buildings and mobile workshops",
-      "Engineered for harsh-environment and remote-site deployment",
-      "Factory-built, fully integrated, rapid installation",
+      "Modular buildings",
+      "Mobile workshops",
     ],
     photoSrc: "/images/modular-e-house.png",
     photoLabel: "E-house control shelter, cutaway engineering render",
@@ -55,14 +53,13 @@ export const advancedPillars: Pillar[] = [
     ),
   },
   {
-    title: "Power Systems",
+    title: "Power & Industrial Equipment",
     description:
-      "Containerized and mobile power generation across standby, prime, and continuous-duty requirements. Configured for industrial sites, remote operations, and mission-critical continuity.",
+      "Power generation and industrial equipment for industrial sites and remote operations, sourced from manufacturers across Europe, Turkey, and international markets.",
     bullets: [
-      "Containerized and mobile power generation",
-      "Standby, prime, and continuous-duty configurations",
-      "Built for industrial sites and remote operations",
-      "Configured for mission-critical continuity",
+      "Containerized and mobile generator sets for standby, prime, and continuous duty",
+      "Electrical and instrumentation equipment",
+      "Other industrial equipment on request, including hard-to-source items",
     ],
     photoSrc: "/images/power-genset.png",
     photoLabel: "Containerized power generator skid",
@@ -74,29 +71,6 @@ export const advancedPillars: Pillar[] = [
         <line x1="30" y1="38" x2="34" y2="38" />
         <circle cx="36" cy="16" r="6" />
         <path d="M36 12v4h4" />
-      </svg>
-    ),
-  },
-  {
-    title: "Industrial Supply",
-    description:
-      "A broad sourcing network across Europe, Turkey, and international markets for electrical, instrumentation, and complementary industrial categories. A single channel for hard-to-source requirements.",
-    bullets: [
-      "Electrical and instrumentation product sourcing",
-      "Sourcing network across Europe, Turkey, and international markets",
-      "Single channel for hard-to-source requirements",
-      "Complementary industrial categories on request",
-    ],
-    photoSrc: "/images/logistics-yard.png",
-    photoLabel: "Aerial view of a logistics and container yard",
-    icon: (
-      <svg {...iconProps}>
-        <circle cx="24" cy="24" r="18" />
-        <circle cx="24" cy="24" r="6" />
-        <line x1="24" y1="6" x2="24" y2="18" />
-        <line x1="24" y1="30" x2="24" y2="42" />
-        <line x1="6" y1="24" x2="18" y2="24" />
-        <line x1="30" y1="24" x2="42" y2="24" />
       </svg>
     ),
   },

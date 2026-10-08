@@ -80,8 +80,8 @@ export default function OpenPositions() {
               <div className="px-8 md:px-10 pb-8 md:pb-10">
                 <p className="text-secondary leading-relaxed">
                   VertexShell is looking for an Account Manager to
-                  own customer relationships across our modular infrastructure,
-                  power systems, aviation, and industrial supply lines. You
+                  own customer relationships across our aviation, modular
+                  infrastructure, and power and industrial equipment lines. You
                   will be the primary point of contact for customers across the
                   public sector, energy, telecom, and industrial construction
                   sectors, managing accounts from initial inquiry through

@@ -23,12 +23,11 @@ export const companies: Company[] = [
     href: "/advanced-solutions",
     tagline: "Engineered infrastructure, power, and aircraft",
     description:
-      "Prefabricated infrastructure, power generation, aircraft, and industrial products, sourced from established manufacturers and delivered to site.",
+      "Aircraft, prefabricated infrastructure, and power and industrial equipment, sourced from established manufacturers and delivered to site.",
     services: [
       "Aviation & Specialized Assets",
       "Modular Infrastructure",
-      "Power Systems",
-      "Industrial Supply",
+      "Power & Industrial Equipment",
     ],
     logo: "/brand/advanced-solutions.png",
     logoWidth: 1581,

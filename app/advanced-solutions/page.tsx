@@ -9,7 +9,7 @@ import { advancedPillars } from "@/lib/pillars";
 export const metadata: Metadata = {
   title: "Advanced Solutions",
   description:
-    "VertexShell Advanced Solutions delivers modular infrastructure, power systems, aviation and specialized assets, and industrial supply, sourced, engineered, and delivered across MENA and international markets.",
+    "VertexShell Advanced Solutions delivers aviation and specialized assets, modular infrastructure, and power and industrial equipment, sourced, engineered, and delivered across MENA and international markets.",
 };
 
 export default function AdvancedSolutionsPage() {
@@ -24,7 +24,7 @@ export default function AdvancedSolutionsPage() {
           logoHeight={370}
           eyebrow="A VertexShell Company"
           title="Engineered infrastructure, power, and aviation assets."
-          description="Advanced Solutions supplies prefabricated infrastructure, power generation, aircraft, and industrial products. We source from established manufacturers, manage testing and delivery, and support installation and handover."
+          description="Advanced Solutions supplies aircraft, prefabricated infrastructure, and power and industrial equipment. We source from established manufacturers, manage testing and delivery, and support installation and handover."
         />
         <PillarList pillars={advancedPillars} />
         <CtaBanner
