@@ -113,7 +113,8 @@ export const tradingPillars: Pillar[] = [
       "Specification, quality, and documentation checks before shipment",
       "Coordinated delivery from origin to destination",
     ],
-    photoLabel: "Food and beverage cargo, photo needed",
+    photoSrc: "/images/cartons-container.jpg",
+    photoLabel: "Cartons on pallets being inspected beside an open shipping container",
     icon: (
       <svg {...iconProps}>
         <path d="M14 6h20l-2 8H16z" strokeLinejoin="round" />
