@@ -16,9 +16,9 @@ export default function Footer() {
           <Image
             src="/brand/group-white.png"
             alt="VertexShell Group"
-            width={1628}
-            height={370}
-            className="h-12 w-auto mb-4 -ml-1"
+            width={1789}
+            height={132}
+            className="w-52 h-auto mb-5"
           />
           <p className="text-white/50 text-sm leading-relaxed max-w-[240px]">
             Engineered supply and international trading across MENA and beyond.

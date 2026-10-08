@@ -36,9 +36,9 @@ export default function Nav() {
           <Image
             src="/brand/group.png"
             alt="VertexShell Group"
-            width={1628}
-            height={370}
-            className="h-7 sm:h-8 lg:h-9 w-auto"
+            width={1789}
+            height={132}
+            className="w-44 sm:w-48 lg:w-52 h-auto"
             priority
           />
         </Link>
