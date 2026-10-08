@@ -4,19 +4,26 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { companies } from "@/lib/companies";
 
-const links = [
+const linksBefore = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
-  { label: "Advanced Solutions", href: "/advanced-solutions" },
-  { label: "Trading Solutions", href: "/trading-solutions" },
+];
+
+const linksAfter = [
   { label: "Careers", href: "/careers" },
   { label: "Contact", href: "/contact" },
 ];
 
+const shortName = (name: string) => name.replace("VertexShell ", "");
+
 export default function Nav() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [companiesOpen, setCompaniesOpen] = useState(false);
+
+  const companyActive = companies.some((c) => pathname === c.href);
 
   useEffect(() => {
     if (mobileOpen) {
@@ -28,6 +35,22 @@ export default function Nav() {
       document.body.style.overflow = "";
     };
   }, [mobileOpen]);
+
+  const desktopLink = (link: { label: string; href: string }) => {
+    const active = pathname === link.href;
+    return (
+      <li key={link.href}>
+        <Link
+          href={link.href}
+          className={`font-mono text-xs uppercase tracking-[0.15em] transition-colors ${
+            active ? "text-primary" : "text-foreground hover:text-primary"
+          }`}
+        >
+          {link.label}
+        </Link>
+      </li>
+    );
+  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
@@ -44,21 +67,73 @@ export default function Nav() {
         </Link>
 
         <ul className="hidden lg:flex items-center gap-8">
-          {links.map((link) => {
-            const active = pathname === link.href;
-            return (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className={`font-mono text-xs uppercase tracking-[0.15em] transition-colors ${
-                    active ? "text-primary" : "text-foreground hover:text-primary"
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              </li>
-            );
-          })}
+          {linksBefore.map(desktopLink)}
+
+          <li
+            className="relative"
+            onMouseEnter={() => setCompaniesOpen(true)}
+            onMouseLeave={() => setCompaniesOpen(false)}
+            onBlur={(e) => {
+              if (!e.currentTarget.contains(e.relatedTarget)) {
+                setCompaniesOpen(false);
+              }
+            }}
+            onKeyDown={(e) => {
+              if (e.key === "Escape") setCompaniesOpen(false);
+            }}
+          >
+            <button
+              type="button"
+              aria-haspopup="true"
+              aria-expanded={companiesOpen}
+              onClick={() => setCompaniesOpen(true)}
+              className={`inline-flex items-center gap-1.5 font-mono text-xs uppercase tracking-[0.15em] transition-colors ${
+                companyActive || companiesOpen
+                  ? "text-primary"
+                  : "text-foreground hover:text-primary"
+              }`}
+            >
+              Companies
+              <svg
+                viewBox="0 0 20 20"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                className={`w-3 h-3 transition-transform ${
+                  companiesOpen ? "rotate-180" : ""
+                }`}
+              >
+                <path d="M5 8l5 5 5-5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+
+            <div
+              className={`absolute left-1/2 -translate-x-1/2 top-full pt-4 transition-opacity duration-150 ${
+                companiesOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+              }`}
+            >
+              <ul className="w-64 bg-white shadow-lg border border-foreground/10 py-2">
+                {companies.map((company) => (
+                  <li key={company.slug}>
+                    <Link
+                      href={company.href}
+                      onClick={() => setCompaniesOpen(false)}
+                      tabIndex={companiesOpen ? 0 : -1}
+                      className={`block px-5 py-3 font-mono text-xs uppercase tracking-[0.15em] transition-colors hover:bg-light hover:text-primary ${
+                        pathname === company.href
+                          ? "text-primary"
+                          : "text-foreground"
+                      }`}
+                    >
+                      {shortName(company.name)}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </li>
+
+          {linksAfter.map(desktopLink)}
         </ul>
 
         <button
@@ -85,21 +160,54 @@ export default function Nav() {
         }`}
       >
         <ul className="flex flex-col p-8 gap-6">
-          {links.map((link) => (
-            <li key={link.href}>
-              <Link
-                href={link.href}
-                onClick={() => setMobileOpen(false)}
-                className={`font-mono text-sm uppercase tracking-[0.15em] transition-colors ${
-                  pathname === link.href
-                    ? "text-primary"
-                    : "text-foreground hover:text-primary"
-                }`}
-              >
-                {link.label}
-              </Link>
-            </li>
-          ))}
+          {[
+            ...linksBefore.map((l) => ({ ...l, group: false })),
+            { label: "Companies", href: "", group: true },
+            ...linksAfter.map((l) => ({ ...l, group: false })),
+          ].map((link) =>
+            link.group ? (
+              <li key="companies">
+                <span
+                  className={`font-mono text-sm uppercase tracking-[0.15em] ${
+                    companyActive ? "text-primary" : "text-foreground"
+                  }`}
+                >
+                  Companies
+                </span>
+                <ul className="mt-4 ml-1 pl-4 border-l border-foreground/15 flex flex-col gap-4">
+                  {companies.map((company) => (
+                    <li key={company.slug}>
+                      <Link
+                        href={company.href}
+                        onClick={() => setMobileOpen(false)}
+                        className={`font-mono text-sm uppercase tracking-[0.15em] transition-colors ${
+                          pathname === company.href
+                            ? "text-primary"
+                            : "text-foreground/70 hover:text-primary"
+                        }`}
+                      >
+                        {shortName(company.name)}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ) : (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  onClick={() => setMobileOpen(false)}
+                  className={`font-mono text-sm uppercase tracking-[0.15em] transition-colors ${
+                    pathname === link.href
+                      ? "text-primary"
+                      : "text-foreground hover:text-primary"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              </li>
+            )
+          )}
         </ul>
       </div>
     </nav>
