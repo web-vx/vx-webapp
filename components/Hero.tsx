@@ -7,12 +7,13 @@ export default function Hero() {
       <MediaPanel
         src="/images/hero-background.png"
         label="C-130 propeller and wing on the tarmac with an aerobatic display team passing behind"
-        imgClassName="object-[center_35%]"
+        imgClassName="object-[72%_center] md:object-[center_35%]"
         fill
         priority
         quality={95}
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/30 to-transparent" />
+      <div className="absolute inset-0 bg-navy/35 md:bg-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/60 to-transparent md:via-navy/30" />
 
       <div className="absolute bottom-8 left-8 w-8 h-8 border-b-2 border-l-2 border-white/25 hidden md:block" />
       <div className="absolute bottom-8 right-8 w-8 h-8 border-b-2 border-r-2 border-white/25 hidden md:block" />
@@ -22,7 +23,7 @@ export default function Hero() {
           Engineered Supply and International Trade
         </h1>
 
-        <p className="mt-6 text-lg md:text-xl text-white/70 leading-relaxed max-w-xl">
+        <p className="mt-6 text-lg md:text-xl text-white/90 md:text-white/70 leading-relaxed max-w-xl">
           VertexShell is a group of two companies. Advanced Solutions
           supplies aviation services, modular infrastructure, and power and industrial
           equipment. Trading &amp; Distribution imports, exports, and distributes
