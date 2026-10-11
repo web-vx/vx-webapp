@@ -6,6 +6,8 @@ interface MediaPanelProps {
   className?: string;
   imgClassName?: string;
   fill?: boolean;
+  priority?: boolean;
+  quality?: number;
 }
 
 /**
@@ -18,6 +20,8 @@ export default function MediaPanel({
   className = "",
   imgClassName = "",
   fill = false,
+  priority = false,
+  quality,
 }: MediaPanelProps) {
   const wrapperClassName = `overflow-hidden bg-navy ${
     fill ? "absolute inset-0" : "relative"
@@ -26,7 +30,15 @@ export default function MediaPanel({
   if (src) {
     return (
       <div className={wrapperClassName}>
-        <Image src={src} alt={label} fill className={`object-cover ${imgClassName}`} />
+        <Image
+          src={src}
+          alt={label}
+          fill
+          sizes="100vw"
+          priority={priority}
+          quality={quality}
+          className={`object-cover ${imgClassName}`}
+        />
       </div>
     );
   }

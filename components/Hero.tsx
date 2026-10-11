@@ -9,6 +9,8 @@ export default function Hero() {
         label="C-130 propeller and wing on the tarmac with an aerobatic display team passing behind"
         imgClassName="object-[center_35%]"
         fill
+        priority
+        quality={95}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/30 to-transparent" />
 
