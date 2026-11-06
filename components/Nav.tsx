@@ -53,7 +53,7 @@ export default function Nav() {
             alt="VertexShell Advanced Solutions"
             width={1581}
             height={370}
-            className="w-56 sm:w-60 lg:w-64 h-auto"
+            className="w-36 sm:w-40 lg:w-44 h-auto"
             priority
           />
         </Link>
