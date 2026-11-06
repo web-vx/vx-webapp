@@ -1,7 +1,7 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import AboutTeaser from "@/components/AboutTeaser";
-import Companies from "@/components/Companies";
+import Services from "@/components/Services";
 import WhyVertexShell from "@/components/WhyVertexShell";
 import CtaBanner from "@/components/CtaBanner";
 import Footer from "@/components/Footer";
@@ -13,7 +13,7 @@ export default function Home() {
       <main>
         <Hero />
         <AboutTeaser />
-        <Companies />
+        <Services />
         <WhyVertexShell />
         <CtaBanner
           title="Send us your requirement."

@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { companies } from "@/lib/companies";
 
 const quickLinks = [
   { label: "About", href: "/about" },
+  { label: "Services", href: "/advanced-solutions" },
   { label: "Careers", href: "/careers" },
   { label: "Contact", href: "/contact" },
 ];
@@ -11,36 +11,18 @@ const quickLinks = [
 export default function Footer() {
   return (
     <footer className="bg-navy border-t border-primary/30">
-      <div className="mx-auto max-w-[1200px] px-6 py-14 grid gap-10 sm:grid-cols-2 md:grid-cols-4">
+      <div className="mx-auto max-w-[1200px] px-6 py-14 grid gap-10 sm:grid-cols-2 md:grid-cols-3">
         <div>
           <Image
-            src="/brand/group-white.png"
-            alt="VertexShell Group"
-            width={1887}
-            height={132}
+            src="/brand/advanced-solutions-white.png"
+            alt="VertexShell Advanced Solutions"
+            width={1581}
+            height={370}
             className="w-52 h-auto mb-5"
           />
           <p className="text-white/50 text-sm leading-relaxed max-w-[240px]">
-            Engineered supply and international trading across MENA and beyond.
+            Aviation, modular infrastructure, and power and industrial equipment across MENA and beyond.
           </p>
-        </div>
-
-        <div>
-          <h3 className="text-xs font-semibold tracking-[0.15em] uppercase text-white/40 mb-4">
-            Our Companies
-          </h3>
-          <ul className="space-y-2.5">
-            {companies.map((company) => (
-              <li key={company.slug}>
-                <Link
-                  href={company.href}
-                  className="text-sm text-white/70 hover:text-white transition-colors"
-                >
-                  {company.name.replace("VertexShell ", "")}
-                </Link>
-              </li>
-            ))}
-          </ul>
         </div>
 
         <div>

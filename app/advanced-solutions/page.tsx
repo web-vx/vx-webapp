@@ -22,7 +22,7 @@ export default function AdvancedSolutionsPage() {
           logoAlt="VertexShell Advanced Solutions"
           logoWidth={1581}
           logoHeight={370}
-          eyebrow="A VertexShell Company"
+          eyebrow="Our Services"
           title="Aviation, infrastructure, and power equipment."
           description="Advanced Solutions provides aviation services, prefabricated infrastructure, and power and industrial equipment. We work with established manufacturers and specialist partners, manage testing and delivery, and support installation and handover."
         />

@@ -7,7 +7,8 @@ export default function Hero() {
       <MediaPanel
         src="/images/hero-background.png"
         label="C-130 propeller and wing on the tarmac with an aerobatic display team passing behind"
-        imgClassName="object-[72%_center] md:object-[center_35%]"
+        mobileSrc="/images/hero-background-mobile.jpg"
+        imgClassName="object-[center_35%]"
         fill
         priority
         quality={95}
@@ -20,14 +21,13 @@ export default function Hero() {
 
       <div className="relative mx-auto max-w-[1200px] px-6 pt-44 pb-14 w-full">
         <h1 className="font-display font-extrabold uppercase text-white leading-[0.95] tracking-tight text-5xl sm:text-6xl md:text-7xl lg:text-[5.25rem] max-w-4xl">
-          Engineered Supply and International Trade
+          Engineered Supply Across MENA
         </h1>
 
         <p className="mt-6 text-lg md:text-xl text-white/90 md:text-white/70 leading-relaxed max-w-xl">
-          VertexShell is a group of two companies. Advanced Solutions
-          supplies aviation services, modular infrastructure, and power and industrial
-          equipment. Trading &amp; Distribution imports, exports, and distributes
-          food and beverage products and raw materials.
+          VertexShell Advanced Solutions supplies aviation services, modular
+          infrastructure, and power and industrial equipment, sourced,
+          engineered, and delivered across MENA and international markets.
         </p>
 
         <div className="mt-10 flex flex-wrap gap-4">
@@ -38,10 +38,10 @@ export default function Hero() {
             Contact us
           </Link>
           <Link
-            href="/#companies"
+            href="/#services"
             className="inline-flex items-center px-8 py-4 border border-white/40 text-white text-sm font-bold uppercase tracking-wider hover:border-white hover:bg-white/10 transition-colors"
           >
-            Our companies
+            Our services
           </Link>
         </div>
       </div>

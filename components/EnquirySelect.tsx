@@ -6,7 +6,6 @@ import { useSearchParams } from "next/navigation";
 const options = [
   { value: "general", label: "General enquiry" },
   { value: "advanced-solutions", label: "VertexShell Advanced Solutions" },
-  { value: "trading-distribution", label: "VertexShell Trading & Distribution" },
 ];
 
 const fieldClassName =

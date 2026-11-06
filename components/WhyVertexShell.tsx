@@ -39,7 +39,7 @@ export default function WhyVertexShell() {
         }`}
       >
         <p className="font-mono text-xs tracking-[0.25em] uppercase text-primary mb-3">
-          Why VertexShell
+          Why VertexShell Advanced Solutions
         </p>
         <h2 className="font-display font-extrabold uppercase text-4xl md:text-5xl text-foreground tracking-tight max-w-2xl">
           What You Can Expect From Us

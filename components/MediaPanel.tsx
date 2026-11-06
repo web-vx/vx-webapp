@@ -1,8 +1,10 @@
-import Image from "next/image";
+import Image, { getImageProps } from "next/image";
 
 interface MediaPanelProps {
   label: string;
   src?: string;
+  /** Portrait variant served below the `md` breakpoint (requires `src`). */
+  mobileSrc?: string;
   className?: string;
   imgClassName?: string;
   fill?: boolean;
@@ -17,6 +19,7 @@ interface MediaPanelProps {
 export default function MediaPanel({
   label,
   src,
+  mobileSrc,
   className = "",
   imgClassName = "",
   fill = false,
@@ -26,6 +29,23 @@ export default function MediaPanel({
   const wrapperClassName = `overflow-hidden bg-navy ${
     fill ? "absolute inset-0" : "relative"
   } ${className}`;
+
+  if (src && mobileSrc) {
+    const common = { alt: label, fill: true, sizes: "100vw", priority, quality };
+    const {
+      props: { srcSet: desktopSrcSet },
+    } = getImageProps({ ...common, src });
+    const { props: mobileProps } = getImageProps({ ...common, src: mobileSrc });
+    return (
+      <div className={wrapperClassName}>
+        <picture>
+          <source media="(min-width: 768px)" srcSet={desktopSrcSet} />
+          {/* eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text */}
+          <img {...mobileProps} className={`object-cover ${imgClassName}`} />
+        </picture>
+      </div>
+    );
+  }
 
   if (src) {
     return (

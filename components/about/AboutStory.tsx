@@ -21,17 +21,15 @@ export default function AboutStory() {
             Our Story
           </p>
           <p className="text-secondary leading-relaxed">
-            VertexShell is a group of two companies. Our customers include
+            VertexShell Advanced Solutions serves customers including
             government bodies, oil &amp; gas and petrochemical operators, power
             and telecom companies, aviation operators, and industrial
-            contractors, as well as food and commodity producers and buyers.
+            contractors.
           </p>
           <p className="text-secondary leading-relaxed">
-            Advanced Solutions provides aviation services, modular infrastructure, and power and
-            industrial equipment.
-            Trading &amp; Distribution imports, exports, and distributes food and
-            beverage products and raw materials. The two companies share a sourcing network
-            and a locally based commercial and project team.
+            We provide aviation services, modular infrastructure, and power
+            and industrial equipment, backed by a sourcing network and a
+            locally based commercial and project team.
           </p>
         </div>
         <MediaPanel

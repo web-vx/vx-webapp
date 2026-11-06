@@ -26,17 +26,13 @@ const plexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://vertexshell.com"),
   title: {
-    default: "VertexShell | Engineered Supply and International Trading",
-    template: "%s | VertexShell",
+    default: "VertexShell Advanced Solutions | Engineered Supply",
+    template: "%s | VertexShell Advanced Solutions",
   },
   description:
-    "Group of companies delivering aviation and specialized assets, modular infrastructure, power and industrial equipment, and international import and export trading across the MENA region and beyond.",
+    "VertexShell Advanced Solutions delivers aviation and specialized assets, modular infrastructure, and power and industrial equipment across the MENA region and beyond.",
   keywords: [
     "industrial supply",
-    "import and export",
-    "food and beverage trading",
-    "raw materials",
-    "group of companies",
     "modular infrastructure",
     "e-houses",
     "prefabricated shelters",
@@ -48,17 +44,17 @@ export const metadata: Metadata = {
     "telecom infrastructure",
   ],
   openGraph: {
-    title: "VertexShell | Engineered Supply and International Trading",
+    title: "VertexShell Advanced Solutions | Engineered Supply",
     description:
-      "Group of companies delivering aviation and specialized assets, modular infrastructure, power and industrial equipment, and international import and export trading across the MENA region and beyond.",
+      "VertexShell Advanced Solutions delivers aviation and specialized assets, modular infrastructure, and power and industrial equipment across the MENA region and beyond.",
     url: "https://vertexshell.com",
-    siteName: "VertexShell",
+    siteName: "VertexShell Advanced Solutions",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "VertexShell Group",
+        alt: "VertexShell Advanced Solutions",
       },
     ],
     locale: "en_US",
@@ -66,9 +62,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "VertexShell | Engineered Supply and International Trading",
+    title: "VertexShell Advanced Solutions | Engineered Supply",
     description:
-      "Engineered supply and international trading across MENA and beyond.",
+      "Engineered supply across MENA and beyond.",
   },
   robots: {
     index: true,
